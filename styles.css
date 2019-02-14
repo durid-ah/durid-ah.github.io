@@ -7,6 +7,10 @@
     background-color: #333;
 }
 
+.frontEndThumbnail {
+    float: top;
+}
+
 #title {
     display: inline;
     padding-left: 25%; 
