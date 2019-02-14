@@ -9,6 +9,8 @@
 
 .frontEndThumbnail {
     float: top;
+    width: 100px;
+    height: 100px;
 }
 
 #title {
