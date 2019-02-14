@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Week06</title>
+        <link rel="stylesheet" type="text/css" href="form_validation_styles.css">
+        <script type="text/javascript" src="validationFunctions.js"></script>
+    </head>
+    <body>
+        <div id="formSection">    
+            <div class="center-text">
+                <form action="" id="purchaseForm">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label>First Name: </label></td>
+                                <td>
+                                    <input name="FirstName" size="16"/>
+                                    <span class="error" id="FirstNameError"></span>
+                                </td>
+                            </tr>                               
+                            <tr>
+                                <td><label>Last Name: </label></td>
+                                <td>
+                                    <input name="LastName" size="16" />
+                                    <span class="error" id="LastNameError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Address:</label></td>
+                                <td>
+                                    <input name="Address" size="32">
+                                    <span class="error" id="AddressError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone Number:</label></td>
+                                <td>
+                                    <input oninput="validatePhone(this.value, 'PhoneNumError')" name="PhoneNum" size="16">
+                                    <span class="error" id="PhoneNumError"></span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Items:</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                    <div id="itemTable">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="item1" id="Mars" value="3" onchange="getItemTotal()">Mars</td>
+                                    <td>$3.00</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="item2" id="Snickers" value="2.5" onchange="getItemTotal()">Snickers</td>
+                                    <td>$2.50</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="item3" id="Twix" value="3.1" onchange="getItemTotal()">Twix</td>
+                                    <td>$3.10</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="item4" id="MilkyWay" value="2.75" onchange="getItemTotal()">Milky Way</td>
+                                    <td>$2.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Total: </td>
+                                    <td id="total"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Card Type</td>
+                                <td>
+                                    <input type="radio" name="cardType" value="Visa"> Visa<br/>
+                                    <input type="radio" name="cardType" value="MasterCard">MasterCard<br/>
+                                    <input type="radio" name="cardType" value="AmericanExpress">American Express<br/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Credit Card #: </label></td>
+                                <td>
+                                    <input name="CardNum" size="32" oninput="validateCardNum(this.value, 'CardNumError')"/>
+                                    <span class="error" id="CardNumError"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Expiration Date: </label></td>
+                                <td>
+                                    <input name="ExpirationDate" size="8" oninput="validateExpDate(this.value, 'ExpirationDateError')"/>
+                                    <span class="error" id="ExpirationDateError"></span>
+                                </td>
+                            </tr>
+                        </tbody>      
+                    </table>
+                    <div class="center" id="buttons">
+                        <button name="button"  type="button"
+                                  onclick="checkEmptyFields()">Confirm Purchase</button>
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </form>
+            </div>
+        </div>        
+    </body>
+</html>
