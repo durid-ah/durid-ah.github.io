@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+.topbar {
+    overflow: hidden;
+    background-color: #d79100;
+}
+
+.home {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topbar h1 {
+    font-family: 'Titan One', cursive;
+    font-size: 50px;
+}
+
+.bar-title {
+    display: inline;
+    padding-left: 5%; 
+    color:aliceblue;
+    text-align:center;
+
+}
+
+h2 {
+    padding-left: 10%;
+    text-align:left;
+    font-size: 23px;
+}
+
+        
+#info {
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 22%;
+    color: bisque;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#searchbox {
+    float: center;
+}
+
+.displayCar {
+    width: 350px;
+    height: 250px;
+}
+
+.topbar a:hover {
+    background-color: bisque;
+    color: black;
+}
+
+.thumbnails {
+    margin-top: 100px;
+    padding: 5%;
+}
