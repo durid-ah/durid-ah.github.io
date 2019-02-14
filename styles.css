@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+body {
+    background-image: url("static_resources/images/index_background.jpg");
+    background-size: 100% 100%;
+}
+
  .header {
     overflow: hidden;
     background-color: #333;
