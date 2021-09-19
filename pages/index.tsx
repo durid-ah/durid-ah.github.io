@@ -1,8 +1,12 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+
+import Layout from "../component/layout";
+import { NavLocation } from '../models/nav_location';
 
 export default function Home() {
   return (
+    <Layout location={NavLocation.Home}>
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -63,5 +67,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </Layout>
   )
 }
