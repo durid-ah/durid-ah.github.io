@@ -2,15 +2,29 @@
    background-color: #1b1c31;
    color: white;
    display: flex;
-   align-items: center;
+   align-items: stretch;
 }
 
 .navbar ul {
    list-style-type: none;
    display: flex;
-   align-items: center;
+   align-items: stretch;
+   margin: 0;
 }
 
 .navbar li {
-   padding: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   font-size: 1.5rem;
+}
+
+.homeButton {
+   height: 100%;
+}
+
+.homeButton:hover {
+   background-color: #fae4e5;
+   color: #1b1c31;
 }

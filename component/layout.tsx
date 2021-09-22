@@ -11,12 +11,12 @@ type LayoutProps = {
 }
 
 export default function Layout({children} : LayoutProps) {
-
+   console.log(styles);
    return (
       <>
          <nav className={styles.navbar}>
             <ul>
-               <li><Link href="/">Home</Link></li>
+               <li className={styles.homeButton}><Link href="/">Home</Link></li>
                <li><Link href="/">Projects</Link></li>
                <li><Link href="/">Resume</Link></li>
             </ul>
