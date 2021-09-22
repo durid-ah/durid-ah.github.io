@@ -10,13 +10,17 @@ type LayoutProps = {
    location: NavLocation
 }
 
-export default function Layout({children} : LayoutProps) {
+const isHomeClicked = (location: NavLocation) => 
+   location == NavLocation.Home ? styles.homeButtonClicked : ""; 
+
+export default function Layout({children, location} : LayoutProps) {
    console.log(styles);
+
    return (
       <>
          <nav className={styles.navbar}>
             <ul>
-               <li className={styles.homeButton}><Link href="/">Home</Link></li>
+               <li className={`${styles.homeButton} ${isHomeClicked(location)}`}><Link href="/">Home</Link></li>
                <li><Link href="/">Projects</Link></li>
                <li><Link href="/">Resume</Link></li>
             </ul>

@@ -24,7 +24,12 @@
    height: 100%;
 }
 
-.homeButton:hover {
+.homeButton:hover .homeButtonClicked {
+   background-color: #fae4e5;
+   color: #1b1c31;
+}
+
+.homeButtonClicked {
    background-color: #fae4e5;
    color: #1b1c31;
 }
