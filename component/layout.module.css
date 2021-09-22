@@ -33,3 +33,13 @@
    background-color: #fae4e5;
    color: #1b1c31;
 }
+
+.projectButton:hover {
+   background-color: #e2edfe;
+   color: #1b1c31;
+}
+
+.resumeButton:hover {
+   background-color: #fef1d4;
+   color: #1b1c31;
+}

@@ -21,8 +21,8 @@ export default function Layout({children, location} : LayoutProps) {
          <nav className={styles.navbar}>
             <ul>
                <li className={`${styles.homeButton} ${isHomeClicked(location)}`}><Link href="/">Home</Link></li>
-               <li><Link href="/">Projects</Link></li>
-               <li><Link href="/">Resume</Link></li>
+               <li className={`${styles.projectButton}`}><Link href="/">Projects</Link></li>
+               <li className={`${styles.resumeButton}`}><Link href="/">Resume</Link></li>
             </ul>
          </nav>
          <div>
