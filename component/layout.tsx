@@ -22,6 +22,7 @@ const isPageClicked = (location: NavLocation, targetLocation: NavLocation) =>
    location == targetLocation ? styles.navButtonClicked : ""; 
 
 export default function Layout({children, location} : LayoutProps) {
+
    // when one of the the page links is clicked it will assign it the clicked
    // class to that button adn clears it from the others
    const homeClickedStyle = isPageClicked(location, NavLocation.Home);
@@ -31,7 +32,7 @@ export default function Layout({children, location} : LayoutProps) {
    return (
       <>
          <nav className={styles.navbar}>
-            <ul>
+            <ul className={styles.show}>
                <li className={`${styles.navButton} ${homeClickedStyle}`}>
                   <Link href="/">Home</Link>
                </li>
