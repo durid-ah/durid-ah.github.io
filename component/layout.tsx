@@ -10,19 +10,37 @@ type LayoutProps = {
    location: NavLocation
 }
 
-const isHomeClicked = (location: NavLocation) => 
-   location == NavLocation.Home ? styles.homeButtonClicked : ""; 
+/**
+ * Compares the current location passed into the component
+ * to a target location
+ * 
+ * @param location the current page location
+ * @param targetLocation the location that you want to compare it to
+ * @returns the navButton clicked style or an empty string
+ */
+const isPageClicked = (location: NavLocation, targetLocation: NavLocation) => 
+   location == targetLocation ? styles.navButtonClicked : ""; 
 
 export default function Layout({children, location} : LayoutProps) {
-   console.log(styles);
-
+   // when one of the the page links is clicked it will assign it the clicked
+   // class to that button adn clears it from the others
+   const homeClickedStyle = isPageClicked(location, NavLocation.Home);
+   const projectClickedStyle = isPageClicked(location, NavLocation.Projects);
+   const resumeClickedStyle = isPageClicked(location, NavLocation.Resume);
+   
    return (
       <>
          <nav className={styles.navbar}>
             <ul>
-               <li className={`${styles.homeButton} ${isHomeClicked(location)}`}><Link href="/">Home</Link></li>
-               <li className={`${styles.projectButton}`}><Link href="/">Projects</Link></li>
-               <li className={`${styles.resumeButton}`}><Link href="/">Resume</Link></li>
+               <li className={`${styles.navButton} ${homeClickedStyle}`}>
+                  <Link href="/">Home</Link>
+               </li>
+               <li className={`${styles.navButton} ${projectClickedStyle}`}>
+                  <Link href="/">Projects</Link>
+               </li>
+               <li className={`${styles.navButton} ${resumeClickedStyle}`}>
+                  <Link href="/">Resume</Link>
+               </li>
             </ul>
          </nav>
          <div>

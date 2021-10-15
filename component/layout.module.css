@@ -20,26 +20,16 @@
    font-size: 1.5rem;
 }
 
-.homeButton {
+.navButton {
    height: 100%;
 }
 
-.homeButton:hover {
+.navButton:hover {
    background-color: #fae4e5;
    color: #1b1c31;
 }
 
-.homeButtonClicked {
+.navButtonClicked {
    background-color: #fae4e5;
-   color: #1b1c31;
-}
-
-.projectButton:hover {
-   background-color: #e2edfe;
-   color: #1b1c31;
-}
-
-.resumeButton:hover {
-   background-color: #fef1d4;
    color: #1b1c31;
 }
