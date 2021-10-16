@@ -16,14 +16,14 @@ export function AppLinks({location}: AppLinksProps ) {
    
    return (
       <>
-         <ul className={styles.show}>
-            <li className={`${styles.navButton} ${homeClickedStyle}`}>
+         <ul className={`${styles.show} ${styles.listContainer}`}>
+            <li className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
                <Link href="/">Home</Link>
             </li>
-            <li className={`${styles.navButton} ${projectClickedStyle}`}>
+            <li className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
                <Link href="/">Projects</Link>
             </li>
-            <li className={`${styles.navButton} ${resumeClickedStyle}`}>
+            <li className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
                <Link href="/">Resume</Link>
             </li>
          </ul>
