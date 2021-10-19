@@ -10,7 +10,7 @@
    font-size: 1.5rem;
 }
 
-.portfolio {
+.portfolioTitle {
    justify-self: start;
    align-self: center;
    flex-grow: 1;
@@ -43,5 +43,9 @@
 
    .hideOnMobile {
       display: none;
+   }
+
+   .portfolioTitle {
+      text-align: center;
    }
 }
