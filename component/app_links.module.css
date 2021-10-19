@@ -1,8 +1,8 @@
 .listContainer {
-   list-style-type: none;
    display: flex;
    align-items: stretch;
-   margin: 0;
+   justify-content: flex-end;
+   width: 25%;
 }
 
 .link {
@@ -11,6 +11,8 @@
    padding-top: 5%;
    padding-bottom: 5%;
    font-size: 1.5rem;
+   display: flex;
+   align-items: center;
 }
 
 .navButton {

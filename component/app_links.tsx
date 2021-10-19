@@ -16,17 +16,17 @@ export function AppLinks({location}: AppLinksProps ) {
    
    return (
       <>
-         <ul className={`${styles.show} ${styles.listContainer}`}>
-            <li className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
+         <div className={`${styles.show} ${styles.listContainer}`}>
+            <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
                <Link href="/">Home</Link>
-            </li>
-            <li className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
+            </div>
+            <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
                <Link href="/">Projects</Link>
-            </li>
-            <li className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
+            </div>
+            <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
                <Link href="/">Resume</Link>
-            </li>
-         </ul>
+            </div>
+         </div>
       </>   
    );
 }

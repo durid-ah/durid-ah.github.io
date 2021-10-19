@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Link from "next/link";
 import React from "react";
 
 import { NavLocation } from "../models/nav_location";
@@ -14,13 +12,13 @@ type LayoutProps = {
 export default function Layout({children, location} : LayoutProps) {
 
    return (
-      <>
+      <div className={styles.container}>
          <nav className={styles.navbar}>
             <AppLinks location={location}/>
          </nav>
          <div>
             {children}
          </div>
-      </>
+      </div>
    );
 }
