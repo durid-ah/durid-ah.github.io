@@ -1,6 +1,6 @@
 .navbar {
    background-color: #1b1c31;
-   color: white;
+   color: #fae4e5;
    display: flex;
    align-items: stretch;
    justify-content: flex-end;
@@ -17,18 +17,8 @@
    padding-left: 1%;
 }
 
-.navButton {
-   height: 100%;
-}
-
-.navButton:hover {
-   background-color: #fae4e5;
-   color: #1b1c31;
-}
-
-.navButtonClicked {
-   background-color: #fae4e5;
-   color: #1b1c31;
+.mobileNav {
+   display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -43,5 +33,11 @@
 
    .portfolioTitle {
       text-align: center;
+   }
+
+   .mobileNav {
+      display: block;
+      background-color: #30303a;
+      color: #fae4e5;
    }
 }

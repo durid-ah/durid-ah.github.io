@@ -17,6 +17,9 @@ export default function Layout({children, location} : LayoutProps) {
             <div className={styles.portfolioTitle}>Durid's Portfolio</div>
             <AppLinks className={styles.hideOnMobile} location={location}/>
          </nav>
+         <div className={styles.mobileNav}>
+            <AppLinks location={location} />
+         </div>
          <div>
             {children}
          </div>
