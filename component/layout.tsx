@@ -12,7 +12,7 @@ type LayoutProps = {
 export default function Layout({children, location} : LayoutProps) {
 
    return (
-      <div className={styles.container}>
+      <div>
          <nav className={styles.navbar}>
             <div className={styles.portfolioTitle}>Durid's Portfolio</div>
             <AppLinks className={styles.hideOnMobile} location={location}/>

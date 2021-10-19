@@ -31,10 +31,6 @@
    color: #1b1c31;
 }
 
-.container {
-   width: 100%;
-}
-
 @media screen and (max-width: 480px) {
    .navbar {
       display: flex;
