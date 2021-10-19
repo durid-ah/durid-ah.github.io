@@ -3,20 +3,24 @@ import Link from "next/link";
 import { NavLocation } from "../models/nav_location";
 
 type AppLinksProps = {
-   location: NavLocation
+   location: NavLocation,
+   className?: string
 }
 
-export function AppLinks({location}: AppLinksProps ) {
+export function AppLinks({location, className}: AppLinksProps ) {
 
    // when one of the the page links is clicked it will assign it the clicked
    // class to that button adn clears it from the others
    const homeClickedStyle = isPageClicked(location, NavLocation.Home);
    const projectClickedStyle = isPageClicked(location, NavLocation.Projects);
    const resumeClickedStyle = isPageClicked(location, NavLocation.Resume);
+
+   const outerStyles = className ? className: ""
+   const containerStyles = `${styles.show} ${styles.listContainer} ${outerStyles}`
    
    return (
       <>
-         <div className={`${styles.show} ${styles.listContainer}`}>
+         <div className={containerStyles}>
             <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
                <Link href="/">Home</Link>
             </div>
