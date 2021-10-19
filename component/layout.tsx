@@ -14,6 +14,7 @@ export default function Layout({children, location} : LayoutProps) {
    return (
       <div className={styles.container}>
          <nav className={styles.navbar}>
+            <div className={styles.portfolio}>Durid's Portfolio</div>
             <AppLinks location={location}/>
          </nav>
          <div>
