@@ -21,6 +21,6 @@ const configWithPlugins = withPlugins([
       }]
     }
   }]
-], nextConfig)
+], nextConfig);
 
 module.exports = configWithPlugins;
