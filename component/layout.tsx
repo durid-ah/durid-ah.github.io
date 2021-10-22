@@ -18,7 +18,7 @@ export default function Layout({children, location} : LayoutProps) {
             <AppLinks className={styles.hideOnMobile} location={location}/>
             <div
                className={styles.showOnMobile}
-               dangerouslySetInnerHTML={{__html: require("../images/vercel.svg?include")}} />
+               dangerouslySetInnerHTML={{__html: require("../images/menu-m.svg?include")}} />
          </nav>
          <div className={styles.mobileNav}>
             <AppLinks location={location} />
