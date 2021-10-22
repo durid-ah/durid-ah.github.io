@@ -15,13 +15,14 @@
    align-self: center;
    flex-grow: 1;
    padding-left: 1%;
+   color: white;
 }
 
 .mobileNav {
    display: none;
 }
 
-.showOnMobile {
+.menuIcon {
    display: none;
 }
 
@@ -45,7 +46,9 @@
       color: #fae4e5;
    }
 
-   .showOnMobile {
-      display: block;
+   .menuIcon {
+      display: flex;
+      border: 1px solid white;
+      align-self: center;
    }
 }

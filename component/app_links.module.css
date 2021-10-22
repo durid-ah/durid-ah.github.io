@@ -41,15 +41,12 @@
 
    .show {
       list-style-type: none;
-      display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0;
       width: 100%;
       padding-left: 0;
    }
-
-
 
    /* .navButton {
       background-color: #1b1c31;

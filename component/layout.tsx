@@ -17,7 +17,7 @@ export default function Layout({children, location} : LayoutProps) {
             <div className={styles.portfolioTitle}>Durid's Portfolio</div>
             <AppLinks className={styles.hideOnMobile} location={location}/>
             <div
-               className={styles.showOnMobile}
+               className={styles.menuIcon}
                dangerouslySetInnerHTML={{__html: require("../images/menu-m.svg?include")}} />
          </nav>
          <div className={styles.mobileNav}>
