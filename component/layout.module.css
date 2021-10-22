@@ -21,6 +21,10 @@
    display: none;
 }
 
+.showOnMobile {
+   display: none;
+}
+
 @media screen and (max-width: 480px) {
    .navbar {
       display: flex;
@@ -39,5 +43,9 @@
       display: block;
       background-color: #30303a;
       color: #fae4e5;
+   }
+
+   .showOnMobile {
+      display: block;
    }
 }
