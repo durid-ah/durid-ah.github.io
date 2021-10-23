@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { NavLocation } from "../models/nav_location";
 import styles from "./layout.module.css";
@@ -10,6 +10,8 @@ type LayoutProps = {
 }
 
 export default function Layout({children, location} : LayoutProps) {
+   const [show, setShow] = useState(false);
+
    return (
       <div>
          <nav className={styles.navbar}>
@@ -17,11 +19,16 @@ export default function Layout({children, location} : LayoutProps) {
             <AppNav location={location}/>
             <div
                className={styles.menuIcon}
+               onClick={() => setShow(!show)}
                dangerouslySetInnerHTML={{__html: require("../images/menu-m.svg?include")}} />
          </nav>
-         <div className={styles.mobileNav}>
-            <AppNav location={location} />
-         </div>
+         {
+            show &&
+            <div className={styles.mobileNav}>
+               <AppMenu location={location} />
+            </div>
+         }
+
          <div>
             {children}
          </div>
