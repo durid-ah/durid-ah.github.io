@@ -1,4 +1,4 @@
-.listContainer {
+.navContainer {
    display: flex;
    align-items: stretch;
    justify-content: flex-end;
@@ -35,6 +35,10 @@
       justify-content: center;
    }
 
+   .navContainer {
+      display: none;
+   }
+
    .hide {
       display: none;
    }
@@ -47,14 +51,4 @@
       width: 100%;
       padding-left: 0;
    }
-
-   /* .navButton {
-      background-color: #1b1c31;
-      color: #fae4e5;
-   }
-
-   .navButtonClicked {
-      background-color: #1b1c31;
-      color: #fae4e5;
-   } */
 }

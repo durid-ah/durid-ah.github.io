@@ -27,10 +27,9 @@ function Links({location}: LinkProps) {
 }
 
 export function AppNav({location}: LinkProps ) {
-
    return (
       <>
-         <div className={styles.listContainer}>
+         <div className={styles.navContainer}>
             <Links location={location}/>
          </div>
       </>   

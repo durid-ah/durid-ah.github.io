@@ -10,6 +10,7 @@
    font-size: 1.5rem;
 }
 
+/* The App title should be to the left on a full width screen */
 .portfolioTitle {
    justify-self: start;
    align-self: center;
@@ -30,10 +31,6 @@
    .navbar {
       display: flex;
       min-height: 3rem;
-   }
-
-   .hideOnMobile {
-      display: none;
    }
 
    .portfolioTitle {
