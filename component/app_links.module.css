@@ -52,4 +52,10 @@
       width: 100%;
       padding-left: 0;
    }
+
+   /** Override button highlight on mobile when hovering */
+   .navButton:hover {
+      background-color: #30303a;
+      color: #fae4e5;
+   }
 }
