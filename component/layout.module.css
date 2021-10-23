@@ -47,7 +47,7 @@
    }
 
    .menuIcon {
-      display: flex;
+      display: inline-flex;
       border: 1px solid white;
       align-self: center;
    }

@@ -2,34 +2,46 @@ import styles from "./app_links.module.css";
 import Link from "next/link";
 import { NavLocation } from "../models/nav_location";
 
-type AppLinksProps = {
-   location: NavLocation,
-   className?: string
-}
+type LinkProps = { location: NavLocation}
 
-export function AppLinks({location, className}: AppLinksProps ) {
-
+function Links({location}: LinkProps) {
    // when one of the the page links is clicked it will assign it the clicked
    // class to that button adn clears it from the others
    const homeClickedStyle = isPageClicked(location, NavLocation.Home);
    const projectClickedStyle = isPageClicked(location, NavLocation.Projects);
    const resumeClickedStyle = isPageClicked(location, NavLocation.Resume);
 
-   const outerStyles = className ? className: ""
-   const containerStyles = `${styles.show} ${styles.listContainer} ${outerStyles}`
-   
    return (
       <>
-         <div className={containerStyles}>
-            <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
+         <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
                <Link href="/">Home</Link>
-            </div>
-            <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
-               <Link href="/">Projects</Link>
-            </div>
-            <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
-               <Link href="/">Resume</Link>
-            </div>
+         </div>
+         <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
+            <Link href="/">Projects</Link>
+         </div>
+         <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
+            <Link href="/">Resume</Link>
+         </div>
+      </>
+   )
+}
+
+export function AppNav({location}: LinkProps ) {
+
+   return (
+      <>
+         <div className={styles.listContainer}>
+            <Links location={location}/>
+         </div>
+      </>   
+   );
+}
+
+export function AppMenu({location}: LinkProps ) {   
+   return (
+      <>
+         <div className={styles.listContainer}>
+            <Links location={location}/>
          </div>
       </>   
    );
