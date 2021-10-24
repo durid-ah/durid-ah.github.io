@@ -1,6 +1,7 @@
+
 .navbar {
-   background-color: #1b1c31;
-   color: #fae4e5;
+   background-color: var(--main-dark);
+   color: var(--main-color);
    display: flex;
    align-items: stretch;
    justify-content: flex-end;
@@ -39,8 +40,8 @@
 
    .mobileNav {
       display: block;
-      background-color: #30303a;
-      color: #fae4e5;
+      background-color: var(--secondary-dark);
+      color: var(--main-color);
    }
 
    .menuIcon {
@@ -48,6 +49,6 @@
       border-radius: 2%;
       padding: 0.1rem;
       align-self: center;
-      background-color: #30303a;
+      background-color: var(--secondary-dark);
    }
 }

@@ -19,13 +19,13 @@
 }
 
 .navButton:hover {
-   background-color: #fae4e5;
-   color: #1b1c31;
+   background-color: var(--main-color);
+   color: var(--main-dark);
 }
 
 .navButtonClicked {
-   background-color: #fae4e5;
-   color: #1b1c31;
+   background-color: var(--main-color);
+   color: var(--main-dark);
 }
 
 @media screen and (max-width: 480px) {
@@ -55,7 +55,7 @@
 
    /** Override button highlight on mobile when hovering */
    .navButton:hover {
-      background-color: #30303a;
-      color: #fae4e5;
+      background-color: var(--secondary-dark);
+      color: var(--main-color);
    }
 }
