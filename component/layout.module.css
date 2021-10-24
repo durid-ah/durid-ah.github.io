@@ -1,3 +1,6 @@
+.screen {
+   height: 100vh;
+}
 
 .navbar {
    background-color: var(--main-dark);
@@ -5,7 +8,7 @@
    display: flex;
    align-items: stretch;
    justify-content: flex-end;
-   height: 3rem;
+   height: var(--navbar-height);
    width: 100%;
    padding-right: 1%;
    font-size: 1.5rem;
@@ -26,6 +29,10 @@
 
 .menuIcon {
    display: none;
+}
+
+.contentDisplay {
+   height: 100%;
 }
 
 @media screen and (max-width: 480px) {

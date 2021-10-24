@@ -7,7 +7,6 @@ import { NavLocation } from '../models/nav_location';
 export default function Home() {
   return (
     <Layout location={NavLocation.Home}>
-    <div className={styles.container}>
       <Head>
         <title>Durid's Portfolio - Home Page</title>
         {/** TODO: Fix link card */}
@@ -16,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
+        <div className={styles.intro}>Random Stuff On Me</div>
       </main>
 
       <footer className={styles.footer}>
@@ -30,7 +29,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
     </Layout>
   )
 }

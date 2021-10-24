@@ -13,7 +13,7 @@ export default function Layout({children, location} : LayoutProps) {
    const [show, setShow] = useState(false);
 
    return (
-      <div>
+      <div className={styles.screen}>
          <nav className={styles.navbar}>
             <div className={styles.portfolioTitle}>Durid's Portfolio</div>
             <AppNav location={location}/>
@@ -29,7 +29,7 @@ export default function Layout({children, location} : LayoutProps) {
             </div>
          }
 
-         <div>
+         <div className={styles.contentDisplay}>
             {children}
          </div>
       </div>
