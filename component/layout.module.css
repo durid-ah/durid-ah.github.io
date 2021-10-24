@@ -45,7 +45,9 @@
 
    .menuIcon {
       display: inline-flex;
-      border: 1px solid white;
+      border-radius: 2%;
+      padding: 0.1rem;
       align-self: center;
+      background-color: #30303a;
    }
 }
