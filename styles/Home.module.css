@@ -5,12 +5,14 @@
   position: relative;
 }
 
+/* Div containing the intro text*/
 .content {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
+/* The slant of the right border */
 .intro:after {
   height: 100%;
   width: 100%;
@@ -23,6 +25,7 @@
   right: 0;
 }
 
+/*This is the bottom slanted border of the main div*/
 .bottomSlant {
   position: absolute;
   background-color: white;
@@ -42,6 +45,7 @@
 }
 
 @media screen and (max-width: 480px) {
+  /*hide the right slant and leave the bottom one*/
   .intro {
     width: 100%;
   }
