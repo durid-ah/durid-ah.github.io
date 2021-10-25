@@ -15,7 +15,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.intro}>Random Stuff On Me</div>
+        <div className={styles.intro}>
+          <div className={styles.bottomSlant}></div>
+          <div className={styles.content}>This is the content</div>
+        </div>
       </main>
 
       <footer className={styles.footer}>
