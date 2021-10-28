@@ -17,20 +17,15 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.intro}>
           <div className={styles.bottomSlant}></div>
-          <div className={styles.content}>This is the content</div>
+          <div className={styles.content}>
+            <h1>Hi! My name's DURID AHMAD</h1>
+            <p></p>
+          </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-          </span>
-        </a>
+      {/** TODO: Maybe add a footer? */}
       </footer>
     </Layout>
   )
