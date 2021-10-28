@@ -17,7 +17,6 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.introWrapper}>
           <div className={styles.intro}>
-            <div className={styles.bottomSlant}></div>
             <div className={styles.content}>
               <div className={styles.paragraph}>
                 <h1>Hi! My name's DURID AHMAD</h1>
