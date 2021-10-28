@@ -15,17 +15,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.intro}>
-          <div className={styles.bottomSlant}></div>
-          <div className={styles.content}>
-            <div className={styles.paragraph}>
-              <h1>Hi! My name's DURID AHMAD</h1>
-              <p>
-                I am a <span className={styles.focus}>Software Engineer</span> who loves to learn how different technologies work. 
-                I am capable of adapting to challenges and working with the resources I have. 
-                My favorite part of software development is understanding how data-intensive applications are built, 
-                and how to properly store that data.
-              </p>
+        <div className={styles.introWrapper}>
+          <div className={styles.intro}>
+            <div className={styles.bottomSlant}></div>
+            <div className={styles.content}>
+              <div className={styles.paragraph}>
+                <h1>Hi! My name's DURID AHMAD</h1>
+                <p>
+                  I am a <span className={styles.focus}>Software Engineer</span> who loves to learn how different technologies work. 
+                  I am capable of adapting to challenges and working with the resources I have. 
+                  My favorite part of software development is understanding how data-intensive applications are built, 
+                  and how to properly store that data.
+                </p>
+              </div>
             </div>
           </div>
         </div>

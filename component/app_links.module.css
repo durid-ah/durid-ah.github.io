@@ -49,6 +49,7 @@
       margin: 0;
       width: 100%;
       padding-left: 0;
+      font-size: 1.75rem;
    }
 
    /** Override button highlight on mobile when hovering */

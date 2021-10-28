@@ -1,8 +1,29 @@
+.introWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 20%;
+}
+
 .intro {
   height: 70%;
+  display: flex;
   width: 75%;
   background-color: white;
   position: relative;
+}
+
+/* The slant of the right border */
+.intro:after {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  content: "";
+  transform: skew(-25deg);
+  transform-origin: bottom right;
+  z-index: 1;
+  right: 0;
 }
 
 .focus {
@@ -16,7 +37,7 @@
 
 /* Div containing the intro text*/
 .content {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -43,18 +64,7 @@
   text-align: left;
 }
 
-/* The slant of the right border */
-.intro:after {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  content: "";
-  transform: skew(-25deg);
-  transform-origin: bottom right;
-  z-index: 1;
-  right: 0;
-}
+
 
 /*This is the bottom slanted border of the main div*/
 .bottomSlant {
@@ -70,14 +80,14 @@
 }
 
 .main {
-  height: 75vh;
   background-color: var(--main-color);
   overflow-x: hidden;
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
   .main {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -102,10 +112,22 @@
   .paragraph {
     width: 80%;
   }
+
+  .main {
+    height: 75vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .paragraph {
     align-items: center;
+  }
+
+  .intro {
+    height: 100vh;
+  }
+
+  .main {
+    height: 150vh;
   }
 }

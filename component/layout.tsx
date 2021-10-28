@@ -28,10 +28,7 @@ export default function Layout({children, location} : LayoutProps) {
                <AppMenu location={location} />
             </div>
          }
-
-         <div className={styles.contentDisplay}>
-            {children}
-         </div>
+         {children}
       </div>
    );
 }
