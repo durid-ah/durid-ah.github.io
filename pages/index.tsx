@@ -19,12 +19,13 @@ export default function Home() {
           <div className={styles.intro}>
             <div className={styles.content}>
               <div className={styles.paragraph}>
-                <h1>Hi! My name's DURID AHMAD</h1>
+                <h1>Hi, my name's DURID AHMAD!</h1>
                 <p>
-                  I am a <span className={styles.focus}>Software Engineer</span> who loves to learn how different technologies work. 
-                  I am capable of adapting to challenges and working with the resources I have. 
-                  My favorite part of software development is understanding how data-intensive applications are built, 
-                  and how to properly store that data.
+                  I am a <span className={styles.focus}>Software Engineer</span> with 
+                  experience working with clients of different backgrounds and translating 
+                  their needs into working solutions. 
+                  For 2+ years, I have built full-stack applications and integration tools that synchronize 
+                  data with third-party systems. Feel free to check out my projects or reach out to me.
                 </p>
               </div>
             </div>
