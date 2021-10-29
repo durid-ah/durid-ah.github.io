@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .intro {
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  padding: 5% 1%;
+  padding: 5% 1% 7%;
 }
 
 .content h1 {
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 1024px) {
   .main {
-    min-height: 100vh;
+    min-height: 75vh;
   }
 }
 
@@ -79,28 +79,24 @@
 @media screen and (max-width: 768px) {
   /*hide the right slant and leave the bottom one*/
   .intro {
+    flex-grow: 1;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .content {
     width: 100%;
   }
 
   .paragraph {
-    width: 80%;
-  }
-
-  .main {
-    height: 75vh;
+    width: 100%;
+    /*top | horizontal | bottom */
+    padding: 3% 3% 7%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .paragraph {
     align-items: center;
-  }
-
-  .intro {
-    height: 100vh;
-  }
-
-  .main {
-    height: 150vh;
   }
 }
