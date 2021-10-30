@@ -20,7 +20,7 @@ export default function Home() {
           <div className={styles.intro}>
             <div className={styles.content}>
               <div className={styles.paragraph}>
-                <h1>Hi, my name's DURID AHMAD!</h1>
+                <h1>Hi, my name&apos;s DURID AHMAD!</h1>
                 <p>
                   I am a <span className={styles.focus}>Software Engineer</span> with 
                   experience working with clients of different backgrounds and translating 
@@ -30,7 +30,7 @@ export default function Home() {
                 </p>
                 <div className={styles.buttonContainer}>
                   <button className={styles.btnSecondary}>Contact Me</button>
-                  <Link href={PROJECT_URL}><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
+                  <Link href={PROJECT_URL} passHref><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
                 </div>
               </div>
             </div>
