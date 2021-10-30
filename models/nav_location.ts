@@ -7,3 +7,5 @@ export enum NavLocation {
    Projects,
    Resume
 }
+
+export const PROJECT_URL = "/projects";

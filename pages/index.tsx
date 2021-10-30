@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from '../styles/Home.module.css';
 import Layout from "../component/layout";
-import { NavLocation } from '../models/nav_location';
+import { NavLocation, PROJECT_URL } from '../models/nav_location';
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
                 </p>
                 <div className={styles.buttonContainer}>
                   <button className={styles.btnSecondary}>Contact Me</button>
-                  <Link href="/projects"><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
+                  <Link href={PROJECT_URL}><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
                 </div>
               </div>
             </div>
