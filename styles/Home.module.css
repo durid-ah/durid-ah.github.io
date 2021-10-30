@@ -70,19 +70,6 @@
   border-radius: 4px;
 }
 
-/* .btnPrimary {
-  background-color: var(--headers);
-  color: white;
-  border: none
-}
-
-.btnSecondary {
-  border-color: var(--headers);
-  color: var(--headers);
-  background-color: white;
-  border: 2px solid;
-} */
-
 .btnPrimary {
   background-color: var(--main-dark);
   color: white;
@@ -97,9 +84,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
-
-}
+@media screen and (max-width: 1024px) { }
 
 /* Large Screens */
 @media screen and (min-width: 1920px) {
