@@ -6,7 +6,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build --prod && next export"
+    "static": "next build && next export"
   },
   "dependencies": {
     "imagemin-svgo": "^9.0.0",
