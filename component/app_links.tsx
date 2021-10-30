@@ -17,7 +17,7 @@ function Links({location}: LinkProps) {
                <Link href="/">Home</Link>
          </div>
          <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
-            <Link href="/">Projects</Link>
+            <Link href="/projects">Projects</Link>
          </div>
          <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
             <Link href="/">Resume</Link>
