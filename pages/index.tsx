@@ -29,8 +29,8 @@ export default function Home() {
                   data with third-party systems. Feel free to check out my projects or reach out to me.
                 </p>
                 <div className={styles.buttonContainer}>
-                  <button>Button1</button>
-                  <button className={styles.buttonPrimary}>Button2</button>
+                  <button className={styles.btnSecondary}>Contact Me</button>
+                  <Link href="/projects"><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
                 </div>
               </div>
             </div>

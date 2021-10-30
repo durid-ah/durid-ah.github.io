@@ -68,38 +68,37 @@
   font-size: 1.25rem;
   padding: 1% 3%;
   border-radius: 4px;
-  font-weight: bold;
 }
 
-/* .buttonPrimary {
+/* .btnPrimary {
   background-color: var(--headers);
   color: white;
   border: none
-} */
+}
 
-/* .buttonPrimary {
+.btnSecondary {
   border-color: var(--headers);
   color: var(--headers);
+  background-color: white;
   border: 2px solid;
 } */
 
-/* .buttonPrimary {
+.btnPrimary {
   background-color: var(--main-dark);
   color: white;
   border: none
-} */
+}
 
-.buttonPrimary {
+.btnSecondary {
   border-color: var(--main-dark);
   color: var(--main-dark);
   background-color: white;
   border: 2px solid;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
-  .main {
-    min-height: 75vh;
-  }
+
 }
 
 /* Large Screens */
@@ -124,6 +123,7 @@
 
   .content {
     width: 100%;
+    margin-bottom: 8%;
   }
 
   .paragraph {
