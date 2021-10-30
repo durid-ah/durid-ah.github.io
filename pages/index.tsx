@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Link from "next/link";
 
+import styles from '../styles/Home.module.css';
 import Layout from "../component/layout";
 import { NavLocation } from '../models/nav_location';
 
@@ -27,6 +28,10 @@ export default function Home() {
                   For 2+ years, I have built full-stack applications and integration tools that synchronize 
                   data with third-party systems. Feel free to check out my projects or reach out to me.
                 </p>
+                <div className={styles.buttonContainer}>
+                  <button>Button1</button>
+                  <button className={styles.buttonPrimary}>Button2</button>
+                </div>
               </div>
             </div>
           </div>
