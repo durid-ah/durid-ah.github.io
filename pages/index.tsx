@@ -30,7 +30,15 @@ export default function Home() {
                 </p>
                 <div className={styles.buttonContainer}>
                   <button className={styles.btnSecondary}>Contact Me</button>
-                  <Link href={PROJECT_URL} passHref><button className={styles.btnPrimary}>Projects {' >'}</button></Link>
+                  <Link href={PROJECT_URL} passHref>
+                    <button className={styles.btnPrimary}>
+                      <div>Projects</div>
+                      <div className={styles.chevronIcon} 
+                        dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
+
+                      </div>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
