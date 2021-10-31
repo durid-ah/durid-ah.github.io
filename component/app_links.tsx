@@ -1,6 +1,6 @@
 import styles from "./app_links.module.css";
 import Link from "next/link";
-import { NavLocation, PROJECT_URL } from "../models/nav_location";
+import { NavLocation, PROJECT_URL, RESUME_URL } from "../models/nav_location";
 
 type LinkProps = { location: NavLocation}
 
@@ -20,7 +20,7 @@ function Links({location}: LinkProps) {
             <Link href={PROJECT_URL}>Projects</Link>
          </div>
          <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
-            <Link href="/">Resume</Link>
+            <Link href={RESUME_URL}>Resume</Link>
          </div>
       </>
    )

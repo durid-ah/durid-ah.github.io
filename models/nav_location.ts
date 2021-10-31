@@ -9,3 +9,4 @@ export enum NavLocation {
 }
 
 export const PROJECT_URL = "/projects";
+export const RESUME_URL = "/resume";
