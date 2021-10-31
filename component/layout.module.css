@@ -17,6 +17,8 @@
    flex-grow: 1;
    padding-left: 1%;
    color: white;
+   font-family: 'Ubuntu Condensed', sans-serif;
+   font-size: 2rem;
 }
 
 .mobileNav {
