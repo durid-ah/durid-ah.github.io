@@ -14,13 +14,13 @@ function Links({location}: LinkProps) {
    return (
       <>
          <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
-               <Link href="/">Home</Link>
+               <Link href="/" passHref><button className={styles.innerButton}>Home</button></Link>
          </div>
          <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
-            <Link href={PROJECT_URL}>Projects</Link>
+            <Link href={PROJECT_URL} passHref><button className={styles.innerButton}>Projects</button></Link>
          </div>
          <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
-            <Link href={RESUME_URL}>Resume</Link>
+            <Link href={RESUME_URL} passHref><button className={styles.innerButton}>Résumé</button></Link>
          </div>
       </>
    )

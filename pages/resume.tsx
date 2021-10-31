@@ -1,5 +1,3 @@
-// Résumé
-
 import Layout from "../component/layout";
 import { NavLocation } from "../models/nav_location";
 
