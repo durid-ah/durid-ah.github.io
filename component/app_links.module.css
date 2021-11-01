@@ -2,7 +2,7 @@
    display: flex;
    align-items: stretch;
    justify-content: flex-end;
-   width: 25%;
+   min-width: 25%;
 }
 
 .link {
@@ -21,7 +21,7 @@
 
 .navButton {
    height: 100%;
-   width: 25%;
+   min-width: 25%;
 }
 
 .navButton:hover {

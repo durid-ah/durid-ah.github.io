@@ -29,11 +29,6 @@
    display: none;
 }
 
-.contentDisplay {
-   /* min-height: 100%; */
-   display: flex;
-}
-
 @media screen and (max-width: 480px) {
    .navbar {
       display: flex;
