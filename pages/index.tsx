@@ -35,7 +35,6 @@ export default function Home() {
                       <div>Projects</div>
                       <div className={styles.chevronIcon} 
                         dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
-
                       </div>
                     </button>
                   </Link>
@@ -43,6 +42,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.contactMe}>
+
         </div>
       </main>
 
