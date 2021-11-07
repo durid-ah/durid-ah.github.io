@@ -1,6 +1,5 @@
 .introWrapper {
   width: 100%;
-  min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
   display: flex;
   margin-bottom: 10%;
 }
@@ -111,6 +110,9 @@
 
 /* Handle tablet AND mobile */
 @media screen and (max-width: 768px) {
+  .introWrapper {
+    margin-bottom: 25%;
+  }
   /*hide the right slant and leave the bottom one*/
   .intro {
     flex-grow: 1;
