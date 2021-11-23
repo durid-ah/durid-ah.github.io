@@ -44,7 +44,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.contactMe}>
-
+          <h1>Contact Me</h1>
+          <div>Test Value</div>
         </div>
       </main>
 
