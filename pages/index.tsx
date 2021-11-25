@@ -45,7 +45,16 @@ export default function Home() {
         </div>
         <div className={styles.contactMe}>
           <h1>Contact Me</h1>
-          <div>Test Value</div>
+          <div>Feel free to reach out to me through LinkedIn or email</div>
+            <div className={styles.cardRow}>
+              <div className={styles.card}>
+                <div
+                  className={styles.linkedinIcon} 
+                  dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}></div>
+              </div>
+              <div className={styles.card}>Test Value</div>
+          </div>
+
         </div>
       </main>
 

@@ -95,6 +95,30 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.contactMe .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid;
+  width: min(200px, 90%);
+
+}
+
+.linkedinIcon {
 }
 
 @media screen and (max-width: 1024px) { }
@@ -129,7 +153,7 @@
 
   .paragraph {
     width: 100%;
-    /*top | horizontal | bottom */
+    /* top | horizontal | bottom */
     padding: 3% 3% 7%;
   }
 }
