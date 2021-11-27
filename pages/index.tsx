@@ -47,16 +47,25 @@ export default function Home() {
           <h1>Contact Me</h1>
           <div>Feel free to reach out to me through LinkedIn or email</div>
             <div className={styles.cardRow}>
-              <div className={styles.card}>
-                <div
-                  className={styles.linkedinIcon} 
-                  dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}>
+              <Link href="">
+                <div className={styles.card}>
+                  <div
+                    className={styles.cardIcon} 
+                    dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}>
+                  </div>
+                  <h3>View Profile</h3>                
+                </div> 
+              </Link>
+              <Link href="">
+                <div className={styles.card}>
+                  <div
+                    className={styles.cardIcon} 
+                    dangerouslySetInnerHTML={{__html: require("../images/email-r.svg?include")}}>
+                  </div>
+                  <h3>Email Me</h3>
                 </div>
-                <h3>View Profile</h3>
-              </div>
-              <div className={styles.card}>Test Value</div>
+              </Link>
           </div>
-
         </div>
       </main>
 
