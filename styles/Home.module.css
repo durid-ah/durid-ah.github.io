@@ -91,18 +91,11 @@
 
 .contactMe {
   background-color: white;
-  height: 25vh;
+  min-height: 25vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contactMe .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%
 }
 
 .cardRow {
@@ -115,10 +108,18 @@
 .card {
   border: 1px solid;
   width: min(200px, 90%);
+  padding: 1%;
+  height: 100%;
+}
 
+.card h3 {
+  text-align: center;
 }
 
 .linkedinIcon {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
 }
 
 @media screen and (max-width: 1024px) { }

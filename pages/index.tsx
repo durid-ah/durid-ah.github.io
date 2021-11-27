@@ -50,7 +50,9 @@ export default function Home() {
               <div className={styles.card}>
                 <div
                   className={styles.linkedinIcon} 
-                  dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}></div>
+                  dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}>
+                </div>
+                <h3>View Profile</h3>
               </div>
               <div className={styles.card}>Test Value</div>
           </div>
