@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className={styles.contactMe}>
           <h1>Contact Me</h1>
-          <div>Feel free to reach out to me through LinkedIn or email</div>
+          <div className={styles.description}>Feel free to reach out to me through LinkedIn or email</div>
             <div className={styles.cardRow}>
               <Link href="">
                 <div className={styles.card}>
@@ -53,7 +53,7 @@ export default function Home() {
                     className={styles.cardIcon} 
                     dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}>
                   </div>
-                  <h3>View Profile</h3>                
+                  <h3>Send a DM</h3>                
                 </div> 
               </Link>
               <Link href="">
@@ -62,7 +62,7 @@ export default function Home() {
                     className={styles.cardIcon} 
                     dangerouslySetInnerHTML={{__html: require("../images/email-r.svg?include")}}>
                   </div>
-                  <h3>Email Me</h3>
+                  <h3>Send an email</h3>
                 </div>
               </Link>
           </div>

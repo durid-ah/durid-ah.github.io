@@ -98,12 +98,18 @@
   align-items: center;
 }
 
+.contactMe .description {
+  text-align: center;
+  padding: 0 2%;
+}
+
 .cardRow {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  margin: 2% auto;
+  margin: 5% auto;
   gap: 2%;
 }
 
