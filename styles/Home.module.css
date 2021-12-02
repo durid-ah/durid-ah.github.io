@@ -110,7 +110,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 5% auto;
-  gap: 2%;
+  gap: 2% 5%;
 }
 
 .card {

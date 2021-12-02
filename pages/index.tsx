@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import styles from '../styles/Home.module.css';
 import Layout from "../component/layout";
+import ContactCard from '../component/contact_card';
 import { NavLocation, PROJECT_URL } from '../models/nav_location';
 
 export default function Home() {
@@ -47,24 +48,21 @@ export default function Home() {
           <h1>Contact Me</h1>
           <div className={styles.description}>Feel free to reach out to me through LinkedIn or email</div>
             <div className={styles.cardRow}>
-              <Link href="https://www.linkedin.com/in/durid-ahmad/">
-                <div className={styles.card}>
-                  <div
-                    className={styles.cardIcon} 
-                    dangerouslySetInnerHTML={{__html: require("../images/iconmonstr-linkedin-2.svg?include")}}>
-                  </div>
-                  <h3>Send a DM</h3>                
-                </div> 
-              </Link>
-              <Link href="mailto:ahmad.durid.dev@gmail.com">
-                <div className={styles.card}>
-                  <div
-                    className={styles.cardIcon} 
-                    dangerouslySetInnerHTML={{__html: require("../images/email-r.svg?include")}}>
-                  </div>
-                  <h3>Send an email</h3>
-                </div>
-              </Link>
+              <ContactCard 
+                href="https://www.linkedin.com/in/durid-ahmad/"
+                svgIcon={require("../images/iconmonstr-linkedin-2.svg?include")}
+                label="Send a DM"
+              />
+              <ContactCard
+                href="mailto:ahmad.durid.dev@gmail.com"
+                svgIcon={require("../images/email-r.svg?include")}
+                label="Send an Email"
+              />
+              <ContactCard
+                href="https://github.com/durid-ah"
+                svgIcon={require("../images/iconmonstr-github-2.svg?include")}
+                label="View My Code"
+              />
           </div>
         </div>
       </main>
