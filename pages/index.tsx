@@ -51,12 +51,13 @@ export default function Home() {
               <ContactCard 
                 href="https://www.linkedin.com/in/durid-ahmad/"
                 svgIcon={require("../images/iconmonstr-linkedin-2.svg?include")}
-                label="Send a DM"
+                label="Send Me A DM"
               />
               <ContactCard
                 href="mailto:ahmad.durid.dev@gmail.com"
-                svgIcon={require("../images/email-r.svg?include")}
-                label="Send an Email"
+                // svgIcon={require("../images/email-r.svg?include")}
+                svgIcon={require("../images/iconmonstr-email-3.svg?include")}
+                label="Send Me An Email"
               />
               <ContactCard
                 href="https://github.com/durid-ah"
