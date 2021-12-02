@@ -1,121 +1,166 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.introWrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.intro {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0 0, 75% 0, 60% 90%, 0 100%);
+}
+
+/* Div containing the intro text*/
+.content {
+  position: relative;
+  width: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  z-index: 2;
+  padding: 5% 1% 7%;
+}
+
+.content h1 {
+  color: var(--headers);
+  text-align: left;
+}
+
+.paragraph {
+  width: 50%;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--main-color);
+  overflow-x: hidden;
+}
+
+.content p {
+  width: 100%;
+  word-break: break-word;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.focus {
+  font-weight: bold;
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  background-color: var(--secondary-dark);
+  height: 4rem;
+  color: var(--main-color);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.buttonContainer {
   display: flex;
+  justify-content: space-evenly;
+  overflow: visible;
+  width: 100%;
+}
+
+.buttonContainer button {
+  font-size: 1.25rem;
+  padding: 1% 2%;
+  border-radius: 4px;
+}
+
+.btnPrimary {
+  background-color: var(--main-dark);
+  color: white;
+  border: none;
+  display: inline-flex;
   align-items: center;
+}
+
+.btnSecondary {
+  border-color: var(--main-dark);
+  color: var(--main-dark);
+  background-color: white;
+  border: 2px solid;
+  font-weight: bold;
+}
+
+.chevronIcon {
+  display: flex;
+}
+
+.contactMe {
+  background-color: white;
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactMe .description {
+  text-align: center;
+  padding: 0 2%;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  width: 100%;
+  margin: 5% auto;
+  gap: 1%;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+@media screen and (max-width: 1024px) { }
+
+/* Large Screens */
+@media screen and (min-width: 1920px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 2rem;
+  }
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+/* Handle tablet AND mobile */
+@media screen and (max-width: 768px) {
+  .introWrapper {
+    margin-bottom: 25%;
+  }
+  /*hide the right slant and leave the bottom one*/
+  .intro {
+    flex-grow: 1;
     width: 100%;
-    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .content {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+
+  .paragraph {
+    width: 100%;
+    /* top | horizontal | bottom */
+    padding: 3% 3% 7%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .paragraph {
+    align-items: center;
   }
 }

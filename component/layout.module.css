@@ -1,0 +1,55 @@
+.navbar {
+   background-color: var(--main-dark);
+   color: var(--main-color);
+   display: flex;
+   align-items: stretch;
+   justify-content: flex-end;
+   height: var(--navbar-height);
+   width: 100%;
+   padding-right: 1%;
+   font-size: 1.5rem;
+}
+
+/* The App title should be to the left on a full width screen */
+.portfolioTitle {
+   justify-self: start;
+   align-self: center;
+   flex-grow: 1;
+   padding-left: 1%;
+   color: white;
+   font-family: 'Ubuntu Condensed', sans-serif;
+   font-size: 2rem;
+}
+
+.mobileNav {
+   display: none;
+}
+
+.menuIcon {
+   display: none;
+}
+
+@media screen and (max-width: 480px) {
+   .navbar {
+      display: flex;
+      min-height: 3rem;
+   }
+
+   .portfolioTitle {
+      text-align: center;
+   }
+
+   .mobileNav {
+      display: block;
+      background-color: var(--secondary-dark);
+      color: var(--main-color);
+   }
+
+   .menuIcon {
+      display: inline-flex;
+      border-radius: 2%;
+      padding: 0.1rem;
+      align-self: center;
+      background-color: var(--secondary-dark);
+   }
+}
