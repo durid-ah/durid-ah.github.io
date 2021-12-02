@@ -9,15 +9,14 @@ type ContactCardProps = {
 }
 
 export default function ContactCard({href, svgIcon, label}: ContactCardProps) {
+   const openLink = () => window.open(href, "_blank")
    return (
-      <Link href={href}>
-         <div className={styles.card}>
-           <div
-             className={styles.cardIcon} 
-             dangerouslySetInnerHTML={{__html: svgIcon}}>
-           </div>
-           <h3>{label}</h3>                
-         </div> 
-      </Link>
+      <div className={styles.card} onClick={openLink}>
+         <div
+           className={styles.cardIcon} 
+           dangerouslySetInnerHTML={{__html: svgIcon}}>
+         </div>
+        <h3>{label}</h3>                
+      </div> 
    )
 }

@@ -8,6 +8,10 @@
    margin: 1%;
 }
 
+.card:hover {
+   text-decoration: underline;
+}
+
 .card h3 {
    text-align: center;
    color: var(--main-dark);
