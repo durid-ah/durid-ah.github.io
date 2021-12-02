@@ -8,7 +8,7 @@ type ContactCardProps = {
 }
 
 export default function ContactCard({href, svgIcon, label}: ContactCardProps) {
-   const openLink = () => window.open(href, "_blank")
+   const openLink = () => window.open(href, "_blank", "noreferrer")
    return (
       <div className={styles.card} onClick={openLink}>
          <div
