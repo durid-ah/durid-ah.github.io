@@ -47,7 +47,7 @@ export default function Home() {
           <h1>Contact Me</h1>
           <div className={styles.description}>Feel free to reach out to me through LinkedIn or email</div>
             <div className={styles.cardRow}>
-              <Link href="">
+              <Link href="https://www.linkedin.com/in/durid-ahmad/">
                 <div className={styles.card}>
                   <div
                     className={styles.cardIcon} 
@@ -56,7 +56,7 @@ export default function Home() {
                   <h3>Send a DM</h3>                
                 </div> 
               </Link>
-              <Link href="">
+              <Link href="mailto:ahmad.durid.dev@gmail.com">
                 <div className={styles.card}>
                   <div
                     className={styles.cardIcon} 
