@@ -69,7 +69,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-      {/** TODO: Maybe add a footer? */}
+        <div>Logos were provided by <Link href="https://iconmonstr.com">iconmonstr</Link></div>
       </footer>
     </Layout>
   )
