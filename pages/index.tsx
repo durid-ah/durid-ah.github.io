@@ -49,7 +49,7 @@ export default function Home() {
         </div>
         <div className={styles.contactMe}>
           <h1>Contact Me</h1>
-          <div className={styles.description}>Feel free to reach out to me through LinkedIn or email</div>
+          <div className={styles.description}>Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github</div>
             <div className={styles.cardRow}>
               <ContactCard 
                 href="https://www.linkedin.com/in/durid-ahmad/"
