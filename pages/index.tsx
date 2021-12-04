@@ -14,8 +14,9 @@ export default function Home() {
           <meta property="og:title" content="Durid's Portfolio" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://durid-ah.github.io/" />
-          <meta name="description" content="Durid's portfolio that contains projects, work experience and contact info" />
-        <link rel="icon" href="/favicon.ico" />
+          <meta property="og:description" content="Checkout my projects and work experience" />
+          <meta property="og:image" content={require("../images/iconmonstr-code-6.svg")} />
+          <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
