@@ -1,0 +1,13 @@
+.main {
+   background-color: var(--main-color);
+   height: calc(100vh - var(--navbar-height));
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+}
+
+.centerContent {
+   background-color: white;
+   height: 100%;
+   width: 66%;
+}
