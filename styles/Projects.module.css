@@ -1,6 +1,5 @@
 .main {
    background-color: var(--main-color);
-   height: calc(100vh - var(--navbar-height));
    display: flex;
    justify-content: center;
    align-items: stretch;
@@ -8,6 +7,38 @@
 
 .centerContent {
    background-color: white;
-   height: 100%;
+   min-height: calc(100vh - var(--navbar-height));
    width: 66%;
+   /* vertical | horizontal */
+   padding: 3em 3%;
+   color: var(--main-dark);
+
+}
+
+.pageTitle h1 {
+   font-size: 3rem;
+}
+
+.centerContent h2 {
+   font-size: 2rem;
+   color: var(--headers);
+}
+
+.projectDescription {
+   font-size: 1.5rem;
+}
+
+.projectDescription span {
+   font-weight: 500;
+}
+
+.currentProject h3 {
+   font-size: 1.7rem;
+}
+
+.chips {
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 5px;
 }
