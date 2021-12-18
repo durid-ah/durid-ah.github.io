@@ -11,6 +11,7 @@
 }
 
 .chips {
+   margin-left: 1%;
    display: inline-flex;
    flex-direction: row;
    flex-wrap: wrap;

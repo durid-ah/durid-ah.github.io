@@ -1,5 +1,5 @@
 import { type } from "os";
-import { Project } from "../models/project";
+import Project from "../models/project";
 import styles from "./project_card.module.css";
 import TechChip from "./tech_chip";
 
@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
             <span className={styles.chips}>
                {
                   project.technologies.map(
-                     text => (<TechChip text={text} />))
+                     text => (<TechChip key={text} text={text} />))
                }
             </span>
          </p>
