@@ -24,7 +24,7 @@ type ProjectProps = {
 }
 
 export default function Projects({projectList, portfolioDescription}: ProjectProps) {
-   
+
    return (
       <>
          <Layout location={NavLocation.Projects}>

@@ -26,10 +26,10 @@ export default function Home() {
               <div className={styles.paragraph}>
                 <h1>Hi, my name&apos;s DURID AHMAD!</h1>
                 <p>
-                  I am a <span className={styles.focus}>Software Engineer</span> with 
-                  experience working with clients of different backgrounds and translating 
-                  their needs into working solutions. 
-                  For 2+ years, I have built full-stack applications and integration tools that synchronize 
+                  I am a <span className={styles.focus}>Software Engineer</span> with
+                  experience working with clients of different backgrounds and translating
+                  their needs into working solutions.
+                  For 2+ years, I have built full-stack applications and integration tools that synchronize
                   data with third-party systems. Feel free to check out my projects or reach out to me.
                 </p>
                 <div className={styles.buttonContainer}>
@@ -37,7 +37,7 @@ export default function Home() {
                   <Link href={PROJECT_URL} passHref>
                     <button className={styles.btnPrimary}>
                       <div>Projects</div>
-                      <div className={styles.chevronIcon} 
+                      <div className={styles.chevronIcon}
                         dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
                       </div>
                     </button>
@@ -51,7 +51,7 @@ export default function Home() {
           <h1>Contact Me</h1>
           <div className={styles.description}>Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github</div>
             <div className={styles.cardRow}>
-              <ContactCard 
+              <ContactCard
                 href="https://www.linkedin.com/in/durid-ahmad/"
                 svgIcon={require("../images/iconmonstr-linkedin-2.svg?include")}
                 label="Send Me A DM"

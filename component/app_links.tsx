@@ -32,28 +32,28 @@ export function AppNav({location}: LinkProps ) {
          <div className={styles.navContainer}>
             <Links location={location}/>
          </div>
-      </>   
+      </>
    );
 }
 
-export function AppMenu({location}: LinkProps ) {   
+export function AppMenu({location}: LinkProps ) {
    return (
       <>
          <div className={styles.listContainer}>
             <Links location={location}/>
          </div>
-      </>   
+      </>
    );
 }
 
 /**
  * Compares the current location passed into the component
  * to a target location
- * 
+ *
  * @param location the current page location
  * @param targetLocation the location that you want to compare it to
  * @returns the navButton clicked style or an empty string
  */
- const isPageClicked = (location: NavLocation, targetLocation: NavLocation) => 
- location == targetLocation ? styles.navButtonClicked : ""; 
+ const isPageClicked = (location: NavLocation, targetLocation: NavLocation) =>
+ location == targetLocation ? styles.navButtonClicked : "";
 

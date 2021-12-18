@@ -12,10 +12,10 @@ export default function ContactCard({href, svgIcon, label}: ContactCardProps) {
    return (
       <div className={styles.card} onClick={openLink}>
          <div
-           className={styles.cardIcon} 
+           className={styles.cardIcon}
            dangerouslySetInnerHTML={{__html: svgIcon}}>
          </div>
-        <h3>{label}</h3>                
-      </div> 
+        <h3>{label}</h3>
+      </div>
    )
 }

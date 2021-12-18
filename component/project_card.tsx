@@ -1,4 +1,3 @@
-import { type } from "os";
 import Project from "../models/project";
 import styles from "./project_card.module.css";
 import TechChip from "./tech_chip";
@@ -15,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
             {project.description}
          </p>
          <p className={styles.projectDescription}>
-            <span>Technologies Used:</span> 
+            <span>Technologies Used:</span>
             <span className={styles.chips}>
                {
                   project.technologies.map(
@@ -28,4 +27,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
    )
 }
 
-export default ProjectCard; 
+export default ProjectCard;
