@@ -1,4 +1,4 @@
-export type Project = {
+type Project = {
    title: string,
    description?: string,
    technologies: string[],
@@ -6,3 +6,5 @@ export type Project = {
    website?: string
    imageUrl?: string
 }
+
+export default Project;
