@@ -58,7 +58,15 @@
       margin: 0;
       width: 100%;
       padding-left: 0;
-      font-size: 1.75rem;
+      font-size: 1.25rem;
+   }
+
+   .innerButton {
+      padding: 2%;
+   }
+
+   .navButton {
+      border: none;
    }
 
    /** Override button highlight on mobile when hovering */
