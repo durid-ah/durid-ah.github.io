@@ -7,6 +7,8 @@ import Project from '../models/project';
 
 import styles from "../styles/Projects.module.css";
 
+const headerImage = require('../images/code-image-luis-gomes-546819.jpg').default;
+
 export async function getStaticProps() {
    const projectList = await getProjectMetadata();
    const portfolioDescription = await getPortfolioData();
@@ -22,6 +24,7 @@ type ProjectProps = {
    projectList: Project[],
    portfolioDescription: Project
 }
+
 
 export default function Projects({projectList, portfolioDescription}: ProjectProps) {
 
@@ -39,10 +42,15 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
             </Head>
 
             <main className={styles.main}>
-               <div className={styles.centerContent}>
-                  <div className={styles.pageTitle}>
-                     <h1>My Projects:</h1>
+               <div className={styles.imageContainer}>
+                  <img className={styles.headerImage} src={headerImage.src}/>
+                  <div className={styles.imageOverlay}>
+                     <div className={styles.pageTitle}>
+                        <h1>My Projects:</h1>
+                     </div>
                   </div>
+               </div>
+               <div className={styles.centerContent}>
                   <h2>This Project:</h2>
                   <ProjectCard project={portfolioDescription}/>
                   <h2>Other Projects:</h2>

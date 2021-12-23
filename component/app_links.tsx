@@ -56,4 +56,3 @@ export function AppMenu({location}: LinkProps ) {
  */
  const isPageClicked = (location: NavLocation, targetLocation: NavLocation) =>
  location == targetLocation ? styles.navButtonClicked : "";
-
