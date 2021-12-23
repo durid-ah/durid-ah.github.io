@@ -58,7 +58,7 @@
 .imageOverlay {
    position: absolute;
    top: 0;
-   background-color: rgba(255, 255, 255, 0.5);
+   background-color: #b9b5dd99;
    height: 100%;
    width: 100%;
    padding: 3em 3%;

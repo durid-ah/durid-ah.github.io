@@ -59,7 +59,6 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                         <ProjectCard key={item.title} project={item}/>
                      ))
                   }
-
                </div>
             </main>
          </Layout>
