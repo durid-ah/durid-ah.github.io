@@ -58,7 +58,6 @@ export default function Home() {
               />
               <ContactCard
                 href="mailto:ahmad.durid.dev@gmail.com"
-                // svgIcon={require("../images/email-r.svg?include")}
                 svgIcon={require("../images/iconmonstr-email-3.svg?include")}
                 label="Send Me An Email"
               />
