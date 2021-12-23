@@ -43,7 +43,7 @@
 .content p {
   width: 100%;
   word-break: break-word;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: left;
 }
 
@@ -110,7 +110,7 @@
 .contactMe .description {
   text-align: center;
   padding: 0 2%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .cardRow {
@@ -151,6 +151,10 @@
   .content {
     width: 100%;
     margin-bottom: 8%;
+  }
+
+  .content p {
+    font-size: 1rem;
   }
 
   .paragraph {
