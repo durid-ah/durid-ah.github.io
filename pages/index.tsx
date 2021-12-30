@@ -38,7 +38,7 @@ export default function Home() {
                     <button className={styles.btnPrimary}>
                       <div>Projects</div>
                       <div className={styles.chevronIcon}
-                        dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
+                         dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
                       </div>
                     </button>
                   </Link>

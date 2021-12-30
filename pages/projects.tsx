@@ -7,8 +7,6 @@ import Project from '../models/project';
 
 import styles from "../styles/Projects.module.css";
 
-const headerImage = require('../images/code-image-luis-gomes-546819.jpg').default;
-
 export async function getStaticProps() {
    const projectList = await getProjectMetadata();
    const portfolioDescription = await getPortfolioData();
@@ -43,7 +41,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
 
             <main className={styles.main}>
                <div className={styles.imageContainer}>
-                  <img className={styles.headerImage} src={headerImage.src}/>
+                  <img className={styles.headerImage} src='../images/code-image-luis-gomes-546819.jpg'/>
                   <div className={styles.imageOverlay}>
                      <div className={styles.pageTitle}>
                         <h1>My Projects:</h1>
