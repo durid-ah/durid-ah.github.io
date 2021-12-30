@@ -1,3 +1,14 @@
+.currentProject {
+   display: flex;
+   flex-direction: column;
+   box-shadow: var(--card-shadow);
+   background-color: white;
+   padding-bottom: 1%;
+   padding-left: 2%;
+   padding-right: 2%;
+   margin-bottom: 2%;
+}
+
 .currentProject h3 {
    font-size: 1.7rem;
 }

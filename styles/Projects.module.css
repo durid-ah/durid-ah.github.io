@@ -6,13 +6,9 @@
 }
 
 .centerContent {
-   background-color: white;
    min-height: calc(100vh - var(--navbar-height));
    width: 66%;
-   /* vertical | horizontal */
-   padding: 3em 3%;
    color: var(--main-dark);
-
 }
 
 .pageTitle h1 {
@@ -23,6 +19,9 @@
 .centerContent h2 {
    font-size: 2rem;
    color: var(--headers);
+   background-color: white;
+   box-shadow: var(--card-shadow);
+   padding: 1% 2%;
 }
 
 .projectDescription {
@@ -49,6 +48,7 @@
    height: 25vh;
    overflow: hidden;
    position: relative;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);;
 }
 
 .headerImage {
@@ -61,5 +61,5 @@
    background-color: #b9b5dd99;
    height: 100%;
    width: 100%;
-   padding: 3em 3%;
+   padding: 3rem 3%;
 }

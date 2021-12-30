@@ -22,7 +22,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
                }
             </span>
          </p>
-         <hr/>
       </div>
    )
 }

@@ -49,7 +49,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                   </div>
                </div>
                <div className={styles.centerContent}>
-                  <h2>This Project:</h2>
+                  <h2>This Website:</h2>
                   <ProjectCard project={portfolioDescription}/>
                   <h2>Other Projects:</h2>
                   {
