@@ -41,7 +41,9 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
 
             <main className={styles.main}>
                <div className={styles.imageContainer}>
-                  <img className={styles.headerImage} src='../images/code-image-luis-gomes-546819.jpg'/>
+                  <img className={styles.headerImage} 
+                     src='../images/code-image-luis-gomes-546819.jpg'
+                     alt='a header image of code by luis gomes'/>
                   <div className={styles.imageOverlay}>
                      <div className={styles.pageTitle}>
                         <h1>My Projects</h1>
