@@ -58,7 +58,7 @@
 .imageOverlay {
    position: absolute;
    top: 0;
-   background-color: #b9b5dd99;
+   background: radial-gradient(at 100% -25%,#b9b5dd99 20%, hsl(248, 32%, 40%));
    height: 100%;
    width: 100%;
    padding: 3rem 3%;

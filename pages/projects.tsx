@@ -23,7 +23,6 @@ type ProjectProps = {
    portfolioDescription: Project
 }
 
-
 export default function Projects({projectList, portfolioDescription}: ProjectProps) {
 
    return (
