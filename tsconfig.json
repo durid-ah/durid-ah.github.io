@@ -20,11 +20,11 @@
     "incremental": true
   },
   "include": [
-    "next-env.d.ts",
+    "custom-next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules", "next-env.d.ts"
   ]
 }
