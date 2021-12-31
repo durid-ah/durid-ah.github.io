@@ -6,6 +6,11 @@ import Layout from "../component/layout";
 import ContactCard from '../component/contact_card';
 import { NavLocation, PROJECT_URL } from '../models/nav_location';
 
+import { default as ChevronSvg } from "../images/chevron-right-m.svg";
+import { default as LinkedInSvg } from "../images/iconmonstr-linkedin-2.svg";
+import { default as EmailSvg } from "../images/iconmonstr-email-3.svg";
+import { default as GitHubSvg } from "../images/iconmonstr-github-2.svg";
+
 export default function Home() {
   return (
     <Layout location={NavLocation.Home}>
@@ -37,8 +42,8 @@ export default function Home() {
                   <Link href={PROJECT_URL} passHref>
                     <button className={styles.btnPrimary}>
                       <div>Projects</div>
-                      <div className={styles.chevronIcon}
-                         dangerouslySetInnerHTML={{__html: require("../images/chevron-right-m.svg?include")}}>
+                      <div className={styles.chevronIcon}>
+                        <ChevronSvg/>
                       </div>
                     </button>
                   </Link>
@@ -53,17 +58,17 @@ export default function Home() {
             <div className={styles.cardRow}>
               <ContactCard
                 href="https://www.linkedin.com/in/durid-ahmad/"
-                svgIcon={require("../images/iconmonstr-linkedin-2.svg?include")}
+                SvgIcon={LinkedInSvg}
                 label="Send Me A DM"
               />
               <ContactCard
                 href="mailto:ahmad.durid.dev@gmail.com"
-                svgIcon={require("../images/iconmonstr-email-3.svg?include")}
+                SvgIcon={EmailSvg}
                 label="Send Me An Email"
               />
               <ContactCard
                 href="https://github.com/durid-ah"
-                svgIcon={require("../images/iconmonstr-github-2.svg?include")}
+                SvgIcon={GitHubSvg}
                 label="View My Code"
               />
           </div>
