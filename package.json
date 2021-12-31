@@ -12,15 +12,12 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-svgo": "^9.0.0",
     "next": "^11.1.2",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.1.2",
     "@types/node": "^16.11.1",
     "@types/react": "^17.0.31",
     "eslint": "7.32.0",
