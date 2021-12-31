@@ -35,7 +35,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                <meta property="og:type" content="website" />
                <meta property="og:url" content="https://durid-ah.github.io/" />
                <meta property="og:description" content="Checkout my hobby projects!" />
-               <meta property="og:image" content={require("../images/iconmonstr-code-6.svg")} />
+               <meta property="og:image" content={"./images/iconmonstr-code-6.svg"} />
                <link rel="icon" href="/favicon.ico" />
             </Head>
 
