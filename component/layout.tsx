@@ -4,6 +4,8 @@ import { NavLocation } from "../models/nav_location";
 import styles from "./layout.module.css";
 import { AppNav, AppMenu } from "./app_links";
 
+import {default as MenuSvg} from '../images/menu-m.svg';
+
 type LayoutProps = {
    children?: React.ReactNode,
    location: NavLocation
@@ -19,8 +21,9 @@ export default function Layout({children, location} : LayoutProps) {
             <AppNav location={location}/>
             <div
                className={styles.menuIcon}
-               onClick={() => setShow(!show)}
-               dangerouslySetInnerHTML={{__html: require("../images/menu-m.svg?include")}} />
+               onClick={() => setShow(!show)}>
+                  <MenuSvg />
+            </div>
          </nav>
          {
             show &&
