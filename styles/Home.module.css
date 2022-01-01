@@ -110,7 +110,7 @@
 .contactMe .description {
   text-align: center;
   padding: 0 2%;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .cardRow {
@@ -154,7 +154,7 @@
   }
 
   .content p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .paragraph {
