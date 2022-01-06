@@ -35,6 +35,7 @@ const toProjectType = (metadata: {[key:string]: any}): Project => {
    return {
       title: metadata["title"],
       description: metadata["description"],
-      technologies: metadata["technologies"].split(",")
+      technologies: metadata["technologies"].split(","),
+      github: metadata["github"] ?? null
    }
 }
