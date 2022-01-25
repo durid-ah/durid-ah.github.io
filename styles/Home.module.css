@@ -137,7 +137,7 @@
 }
 
 /* Handle tablet AND mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .introWrapper {
     margin-bottom: 25%;
   }
