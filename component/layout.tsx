@@ -32,6 +32,10 @@ export default function Layout({children, location} : LayoutProps) {
             </div>
          }
          {children}
+
+         <footer className={styles.footer}>
+            <div>Logos were provided by <a target="_blank" rel="noreferrer" href="https://iconmonstr.com">iconmonstr</a></div>
+         </footer>
       </>
    );
 }
