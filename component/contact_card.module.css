@@ -1,6 +1,5 @@
-
 .card {
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   box-shadow: var(--card-shadow);
    width: min(200px, 90%);
    padding: 1%;
    height: 100%;

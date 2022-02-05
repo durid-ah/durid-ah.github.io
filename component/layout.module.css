@@ -29,6 +29,20 @@
    display: none;
 }
 
+.footer {
+   background-color: var(--secondary-dark);
+   height: 4rem;
+   color: var(--main-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .footer a {
+   text-decoration: underline;
+ }
+
 @media screen and (max-width: 480px) {
    .navbar {
       display: flex;

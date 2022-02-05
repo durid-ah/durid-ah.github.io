@@ -1,26 +1,19 @@
 // next.config.js
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
 
 // default next.js configuration
 const nextConfig = {
   reactStrictMode: true,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    })
+
+    return config
+  },
 };
 
-// Plugin handling
-const configWithPlugins = withPlugins([
-  // image plugins
-  [optimizedImages, {
-    handleImages: ['svg'],
-    svgo: {
-      plugins: [{
-        name: 'removeViewBox',
-        active: false
-      }]
-    }
-  }]
-], nextConfig);
-
-module.exports = configWithPlugins;
+module.exports = nextConfig;
