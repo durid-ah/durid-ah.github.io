@@ -1,7 +1,20 @@
+.main {
+  background-color: var(--main-color);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 66%;
+  background-color: #e5e3f399;
+  box-shadow: var(--card-shadow);
+}
+
 .introWrapper {
   width: 100%;
   display: flex;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 
 .intro {
@@ -9,8 +22,10 @@
   display: flex;
   width: 100%;
   background-color: white;
+  padding-left: 10%;
   position: relative;
-  clip-path: polygon(0 0, 75% 0, 60% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 82% 92%, 0 100%);
+  box-shadow: var(--card-shadow);
 }
 
 /* Div containing the intro text*/
@@ -32,12 +47,7 @@
 }
 
 .paragraph {
-  width: 50%;
-}
-
-.main {
-  background-color: var(--main-color);
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .content p {
@@ -50,8 +60,6 @@
 .focus {
   font-weight: bold;
 }
-
-
 
 .buttonContainer {
   display: flex;
@@ -93,6 +101,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);;
 }
 
 .contactMe .description {

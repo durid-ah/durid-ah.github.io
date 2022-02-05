@@ -39,25 +39,30 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
             </Head>
 
             <main className={styles.main}>
-               <div className={styles.imageContainer}>
-                  <img className={styles.headerImage} 
-                     src='../images/code-image-luis-gomes-546819.jpg'
-                     alt='a header image of code by luis gomes'/>
-                  <div className={styles.imageOverlay}>
-                     <div className={styles.pageTitle}>
-                        <h1>My Projects</h1>
+               <div className={styles.centerContent}>
+                  <div className={styles.imageContainer}>
+                     <img className={styles.headerImage} 
+                        src='../images/code-image-luis-gomes-546819.jpg'
+                        alt='a header image of code by luis gomes'/>
+                     <div className={styles.imageOverlay}>
+                        <div className={styles.pageTitle}>
+                           <h1>My Projects</h1>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <div className={styles.centerContent}>
-                  <h2>This Website:</h2>
-                  <ProjectCard project={portfolioDescription}/>
-                  <h2>Other Projects:</h2>
-                  {
-                     projectList.map(item => (
-                        <ProjectCard key={item.title} project={item}/>
-                     ))
-                  }
+                  <div className={styles.mainProject}>
+                     <h2>This Website:</h2>
+                     <ProjectCard project={portfolioDescription}/>
+                  </div>
+
+                  <div className={styles.projectList}>
+                     <h2>Other Projects:</h2>
+                     {
+                        projectList.map(item => (
+                           <ProjectCard key={item.title} project={item}/>
+                        ))
+                     }
+                  </div>
                </div>
             </main>
          </Layout>
