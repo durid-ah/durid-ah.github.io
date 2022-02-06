@@ -121,29 +121,21 @@
   gap: 1%;
 }
 
-@media screen and (max-width: 1024px) { }
-
-/* Large Screens */
-@media screen and (min-width: 1920px) {
-  .content h1 {
-    font-size: 3rem;
-  }
-
-  .content p {
-    font-size: 2rem;
-  }
-}
-
 /* Handle tablet AND mobile */
 @media screen and (max-width: 820px) {
   .introWrapper {
     margin-bottom: 25%;
   }
+
   /*hide the right slant and leave the bottom one*/
   .intro {
     flex-grow: 1;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .mainContent {
+    width: 100%;
   }
 
   .content {
