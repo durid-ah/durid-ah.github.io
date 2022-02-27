@@ -29,7 +29,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
       <>
          <Layout location={NavLocation.Projects}>
             <Head>
-               <title>Durid&apos;s Portfolio - Projects</title>
+               <title>Durid&apos;s Portfolio - Resume</title>
                <meta property="og:title" content="Durid's Portfolio" />
                <meta property="og:type" content="website" />
                <meta property="og:url" content="https://durid-ah.github.io/" />
