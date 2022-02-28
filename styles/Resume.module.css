@@ -7,9 +7,11 @@
 
 .title {
    width: 66%;
+   background-color: var(--center-background);
 }
 
 .timelineSection {
+   background-color: var(--center-background);
    width: 66%;
 }
 
@@ -53,7 +55,7 @@
 }
  
 /* Add arrows to the right container (pointing left) */
-.right::before {
+.container::before {
    content: " ";
    height: 25px;
    width: 25px;

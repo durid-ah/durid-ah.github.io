@@ -9,7 +9,7 @@
    min-height: calc(100vh - var(--navbar-height));
    width: 66%;
    color: var(--main-dark);
-   background-color: #e5e3f399;
+   background-color: var(--center-background);
 }
 
 .mainProject {

@@ -8,7 +8,7 @@
 
 .mainContent {
   width: 66%;
-  background-color: #e5e3f399;
+  background-color: var(--center-background);
   box-shadow: var(--card-shadow);
 }
 
