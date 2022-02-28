@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-import { NavLocation } from "../models/nav_location";
+import { NavLocation } from "../../models/nav_location";
 import styles from "./layout.module.css";
-import { AppNav, AppMenu } from "./app_links.component/app_links";
+import { AppNav, AppMenu } from "./app_links";
 
-import {default as MenuSvg} from '../images/menu-m.svg';
+import {default as MenuSvg} from '../../images/menu-m.svg';
 
 type LayoutProps = {
    children?: React.ReactNode,

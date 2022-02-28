@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout from "../component/layout";
-import TitleSection from "../component/title_section";
+import Layout from "../component/shared_components/layout";
+import TitleSection from "../component/shared_components/title_section";
 import { NavLocation } from "../models/nav_location";
 
 import styles from "../styles/Resume.module.css";
