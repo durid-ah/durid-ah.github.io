@@ -5,23 +5,10 @@
    align-items: center;
 }
 
-.imageContainer {
-   height: 25vh;
-   overflow: hidden;
-   position: relative;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-   margin-bottom: 5%;
-}
-
-.headerImage {
-   width: 100%;
-}
-
 .centerContent {
    min-height: calc(100vh - var(--navbar-height));
    width: 66%;
    color: var(--main-dark);
-   box-shadow: var(--card-shadow);
    background-color: #e5e3f399;
 }
 
@@ -29,25 +16,10 @@
    margin-bottom: 5%;
 }
 
-.imageOverlay {
-   position: absolute;
-   top: 0;
-   background: radial-gradient(at 100% -25%,#b9b5dd99 20%, hsl(248, 32%, 40%));
-   height: 100%;
-   width: 100%;
-   padding: 3rem 3%;
-}
-
-.pageTitle h1 {
-   font-size: 3rem;
-   color: var(--main-dark);
-}
-
 .centerContent h2 {
    font-size: 2rem;
    color: var(--headers);
    background-color: white;
-   box-shadow: var(--card-shadow);
    padding: 1% 2%;
 }
 
@@ -72,10 +44,6 @@
 
 /* Tablet and smaller settings */
 @media screen and (max-width: 820px) {
-   .imageContainer {
-      width: 100%;
-   }
-
    .centerContent {
       width: 100%;
    }

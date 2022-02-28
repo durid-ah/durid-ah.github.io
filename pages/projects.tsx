@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from "../component/layout";
 import ProjectCard from '../component/project_card';
+import TitleSection from '../component/title_section';
 import { getPortfolioData, getProjectMetadata } from '../lib/project_parser';
 import { NavLocation } from "../models/nav_location";
 import Project from '../models/project';
@@ -40,16 +41,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
 
             <main className={styles.main}>
                <div className={styles.centerContent}>
-                  <div className={styles.imageContainer}>
-                     <img className={styles.headerImage} 
-                        src='../images/code-image-luis-gomes-546819.jpg'
-                        alt='a header image of code by luis gomes'/>
-                     <div className={styles.imageOverlay}>
-                        <div className={styles.pageTitle}>
-                           <h1>My Projects</h1>
-                        </div>
-                     </div>
-                  </div>
+                  <TitleSection title="My Project" />
                   <div className={styles.mainProject}>
                      <h2>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
