@@ -1,6 +1,6 @@
 import styles from "./app_links.module.css";
 import Link from "next/link";
-import { NavLocation, PROJECT_URL, RESUME_URL } from "../../models/nav_location";
+import { NavLocation, PROJECT_URL, RESUME_URL } from "../../../models/nav_location";
 
 type LinkProps = { location: NavLocation}
 

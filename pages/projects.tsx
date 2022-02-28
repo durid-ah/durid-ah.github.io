@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Layout from "../component/shared_components/layout";
-import ProjectCard from '../component/project_components/project_card';
-import TitleSection from '../component/shared_components/title_section';
+import Layout from "../component/shared_components/layout/layout";
+import ProjectCard from '../component/project_components/project_card/project_card';
+import TitleSection from '../component/shared_components/title_section/title_section';
 import { getPortfolioData, getProjectMetadata } from '../lib/project_parser';
 import { NavLocation } from "../models/nav_location";
 import Project from '../models/project';
