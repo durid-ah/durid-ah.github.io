@@ -1,4 +1,5 @@
 import Head from "next/head";
+import JobCard from "../component/resume_components/job_card/job_card";
 import Layout from "../component/shared_components/layout/layout";
 import TitleSection from "../component/shared_components/title_section/title_section";
 import { NavLocation } from "../models/nav_location";
@@ -24,10 +25,7 @@ export default function Resume() {
             <section className={styles.timelineSection}>
                <div className={styles.timeline}>
                   <div className={styles.container}>
-                     <div className={styles.content}>
-                        <h2>2017</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                     </div>
+                     <JobCard/>
                   </div>
                   <div className={styles.container}>
                      <div className={styles.content}>
