@@ -32,8 +32,8 @@ export const getPortfolioData = async (): Promise<Project> => {
 }
 
 const toProjectType = (metadata: {[key:string]: any}): Project => ({
-      title: metadata["title"],
-      description: metadata["description"],
-      technologies: metadata["technologies"].split(","),
-      github: metadata["github"] ?? null
+   title: metadata["title"],
+   description: metadata["description"],
+   technologies: metadata["technologies"].split(","),
+   github: metadata["github"] ?? null
 });
