@@ -1,15 +1,15 @@
 import {promises as fs} from "fs";
 import path from "path";
-import { Job } from "../models/job";
+import Job, { toJobType } from "../models/job";
 
-const DATA_DIR = '../data';
+const DATA_DIR = './data';
 const JOBS_FILE = 'jobs.json';
 
-export const getJobList = async () => {
+export const getJobList = async (): Promise<Job[]> => {
    let filePath = path.join(DATA_DIR, JOBS_FILE);
    let dataString = await fs.readFile(filePath, 'utf-8');
    let parsedData: any[] = JSON.parse(dataString);
-   console.log(dataString);
 
-   return parsedData.map(data => new Job(data));
+   return parsedData.map(data => toJobType(data));
 }
+

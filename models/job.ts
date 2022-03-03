@@ -1,5 +1,5 @@
-
-export class Job {
+ 
+type Job = {
    position: string;
    company:string;
    startDate: Date;
@@ -7,13 +7,16 @@ export class Job {
    current: boolean;
    logoUrl?: string;
    descriptions: string[];
-
-   constructor(json: any) {
-      this.position = json.position;
-      this.company = json.company;
-      this.startDate = new Date(json.startDate);
-      this.endDate = json.endDate ?? null;
-
-      this.descriptions = json.descriptions;
-   }
 }
+
+export const toJobType = (json: any): Job => ({
+   position: json.position,
+   company: json.company,
+   startDate: json.startDate,
+   endDate: json.endDate ?? null,
+   current: json.current,
+   logoUrl: json.logoUrl,
+   descriptions: json.descriptions 
+});
+
+export default Job;

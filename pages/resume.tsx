@@ -2,11 +2,22 @@ import Head from "next/head";
 import JobCard from "../component/resume_components/job_card/job_card";
 import Layout from "../component/shared_components/layout/layout";
 import TitleSection from "../component/shared_components/title_section/title_section";
+import { getJobList } from "../lib/job_parser";
+import Job from "../models/job";
 import { NavLocation } from "../models/nav_location";
 
 import styles from "../styles/Resume.module.css";
 
-export default function Resume() {
+export async function getStaticProps() {
+
+   return { props: { jobList: await getJobList() }}
+}
+
+type ResumeProps = {
+   jobList: Job[]
+}
+
+export default function Resume({jobList}: ResumeProps) {
    return (
       <Layout location={NavLocation.Resume}>
          <Head>
