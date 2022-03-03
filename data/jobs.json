@@ -2,11 +2,11 @@
    {
       "position": "Software Engineer",
       "company": "Brigham Young University - Idaho",
-      "Start Date": "2019-9-1",
-      "Logo Url": "",
-      "Current": true,
-      "Location": "Remote",
-      "Descriptions": [
+      "startDate": "2019-9-1",
+      "logoUrl": "",
+      "current": true,
+      "location": "Remote",
+      "descriptions": [
          "Maintained ownership of multiple integration pipelines and full-stack applications that provided services to staff and students all around the world.",
          "Added a versioning system to our survey taking app by restructuring the SQL database.",
          "Set up monitoring for my applications to ensure that any bugs or outages were handled properly.",
