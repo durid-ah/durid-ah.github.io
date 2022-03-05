@@ -1,5 +1,4 @@
- 
-type Job = {
+ type Job = {
    position: string;
    company:string;
    location: string;
