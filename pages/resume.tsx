@@ -34,7 +34,8 @@ export default function Resume({jobList}: ResumeProps) {
             </section>
             <section className={styles.timelineSection}>
                <div className={styles.timeline}>
-                  {jobList.map((job, idx) => (<JobCard {...job} />))}
+                  {jobList.map((job, idx) => 
+                     ( <JobCard key={idx} {...job} /> ))}
                </div>
             </section>
          </main>

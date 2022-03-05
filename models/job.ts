@@ -3,8 +3,8 @@ type Job = {
    position: string;
    company:string;
    location: string;
-   startDate: Date;
-   endDate?: Date;
+   startDate: string;
+   endDate?: string;
    current: boolean;
    logoUrl?: string;
    descriptions: string[];
