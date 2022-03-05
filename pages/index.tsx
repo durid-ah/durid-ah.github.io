@@ -60,45 +60,37 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.skills}>
-              <h1>My Skills</h1>
-              <div className={styles.cardRow}>
-                <ContactCard
-                  href=""
-                  SvgIcon={CSharpSvg}
-                  label="C#/.NET"
-                  background='purple'/>
-                <ContactCard
-                  href=""
-                  SvgIcon={NodeJsSvg}
-                  label="node.js"
-                  background='purple'/>
-                <ContactCard
-                  href=""
-                  SvgIcon={ReactSvg}
-                  label="React.js"
-                  background='purple'/>
-              </div>
+            <h1>My Skills</h1>
+            <div className={styles.cardRow}>
+              <ContactCard
+                href="" SvgIcon={CSharpSvg} label="C#/.NET" background='purple'/>
+              <ContactCard
+                href="" SvgIcon={NodeJsSvg} label="node.js" background='purple'/>
+              <ContactCard
+                href="" SvgIcon={ReactSvg} label="React.js" background='purple'/>
+            </div>
           </section>
-          
           <div className={styles.contactMe}>
             <h1>Contact Me</h1>
-            <div className={styles.description}>Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github</div>
-              <div className={styles.cardRow}>
-                <ContactCard
-                  href="https://www.linkedin.com/in/durid-ahmad/"
-                  SvgIcon={LinkedInSvg}
-                  label="Send Me A DM"
-                  background='white' />
-                <ContactCard
-                  href="mailto:ahmad.durid.dev@gmail.com"
-                  SvgIcon={EmailSvg}
-                  label="Send Me An Email"
-                  background='white' />
-                <ContactCard
-                  href="https://github.com/durid-ah"
-                  SvgIcon={GitHubSvg}
-                  label="View My Code"
-                  background='white' />
+            <div className={styles.description}>
+              Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github
+            </div>
+            <div className={styles.cardRow}>
+              <ContactCard
+                href="https://www.linkedin.com/in/durid-ahmad/"
+                SvgIcon={LinkedInSvg}
+                label="Send Me A DM"
+                background='white' />
+              <ContactCard
+                href="mailto:ahmad.durid.dev@gmail.com"
+                SvgIcon={EmailSvg}
+                label="Send Me An Email"
+                background='white' />
+              <ContactCard
+                href="https://github.com/durid-ah"
+                SvgIcon={GitHubSvg}
+                label="View My Code"
+                background='white' />
             </div>
           </div>
         </div>

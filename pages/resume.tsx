@@ -9,7 +9,6 @@ import { NavLocation } from "../models/nav_location";
 import styles from "../styles/Resume.module.css";
 
 export async function getStaticProps() {
-
    return { props: { jobList: await getJobList() }}
 }
 
@@ -35,7 +34,7 @@ export default function Resume({jobList}: ResumeProps) {
             </section>
             <section className={styles.timelineSection}>
                <div className={styles.timeline}>
-                  {jobList.map((job, idx) => (<JobCard/>))}
+                  {jobList.map((job, idx) => (<JobCard {...job} />))}
                </div>
             </section>
          </main>

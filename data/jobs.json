@@ -14,5 +14,37 @@
          "Found security flaws like broken access control and implemented Azure Pipelines for the projects I was assigned to, in order to check for vulnerable dependencies and improve the deployment process.",
          "Technologies used: .NET core/.NET Framework (C#), SQL Server, Angular, Node.js"
       ]
+   },
+   {
+      "position": "Web Developer Intern",
+      "company": "FamilySearch.org",
+      "startDate": "2019-9-1",
+      "logoUrl": "",
+      "current": true,
+      "location": "Lehi, UT",
+      "descriptions": [
+         "Maintained ownership of multiple integration pipelines and full-stack applications that provided services to staff and students all around the world.",
+         "Added a versioning system to our survey taking app by restructuring the SQL database.",
+         "Set up monitoring for my applications to ensure that any bugs or outages were handled properly.",
+         "Improved applications by reducing load times through cutting down redundant API calls and deferring large asset loading until it’s needed.",
+         "Found security flaws like broken access control and implemented Azure Pipelines for the projects I was assigned to, in order to check for vulnerable dependencies and improve the deployment process.",
+         "Technologies used: .NET core/.NET Framework (C#), SQL Server, Angular, Node.js"
+      ]
+   },
+   {
+      "position": "Student Software Engineer",
+      "company": "Brigham Young University - Idaho",
+      "startDate": "2019-9-1",
+      "logoUrl": "",
+      "current": true,
+      "location": "Rexburg, ID",
+      "descriptions": [
+         "Maintained ownership of multiple integration pipelines and full-stack applications that provided services to staff and students all around the world.",
+         "Added a versioning system to our survey taking app by restructuring the SQL database.",
+         "Set up monitoring for my applications to ensure that any bugs or outages were handled properly.",
+         "Improved applications by reducing load times through cutting down redundant API calls and deferring large asset loading until it’s needed.",
+         "Found security flaws like broken access control and implemented Azure Pipelines for the projects I was assigned to, in order to check for vulnerable dependencies and improve the deployment process.",
+         "Technologies used: .NET core/.NET Framework (C#), SQL Server, Angular, Node.js"
+      ]
    }
 ]

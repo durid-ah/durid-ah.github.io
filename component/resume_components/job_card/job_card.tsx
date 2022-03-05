@@ -1,12 +1,18 @@
 
+import Job from "../../../models/job";
 import styles from "./job_card.module.css";
 
-export default function JobCard() {
+export default function JobCard({position, company, location, descriptions, endDate}: Job) {
+   const end = endDate ?? new Date();
+
    return (
          <div className={styles.container}>
          <div className={styles.content}>
-            <h2>2017</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <h2>{position}</h2>
+            <h3>{company} ({location})</h3>
+            <ul>
+               {descriptions.map(desc => (<li key={desc}>{desc}</li>))}
+            </ul>
          </div>
       </div>
    );
