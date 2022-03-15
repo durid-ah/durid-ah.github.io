@@ -35,7 +35,7 @@ export default function Resume({jobList}: ResumeProps) {
                   <TitleSection title="My Work History" />
                </section>
                <section className={styles.intro}>
-                  Placeholder ...
+                  <h2>My work history is listed starting from the most recent to the oldest.</h2>
                </section>
                <section className={styles.timelineSection}>
                   <div className={styles.timeline}>
