@@ -6,9 +6,11 @@
    padding-left: 2%;
    padding-right: 2%;
    margin-bottom: 2%;
+   border: 2px;
 }
 
 .currentProject h3 {
+   color: var(--headers);
    font-size: 1.7rem;
 }
 

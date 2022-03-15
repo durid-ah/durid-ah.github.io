@@ -9,7 +9,7 @@ export default function JobCard({position, company, location, descriptions, star
    const [timeDiff, _] = useState(new TimeDiff(new Date(startDate), parsedEndDate))
 
    return (
-         <div className={styles.container}>
+      <div className={styles.container}>
          <div className={styles.content}>
             <h2> <span>{position}</span> <span className={styles.time}>{timeDiff.toString()}</span></h2>
             <h3>{company} ({location})</h3>

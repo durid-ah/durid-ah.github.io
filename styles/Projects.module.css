@@ -6,7 +6,7 @@
 }
 
 .mainProject {
-   margin-bottom: 5%;
+   padding: 1%;
 }
 
 .main h2 {
@@ -14,6 +14,11 @@
    color: var(--headers);
    background-color: white;
    padding: 1% 2%;
+   border-radius: 2px;
+}
+
+.projectList {
+   padding: 1%;
 }
 
 .projectDescription {

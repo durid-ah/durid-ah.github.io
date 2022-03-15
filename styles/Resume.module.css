@@ -13,7 +13,7 @@
 .timeline {
    position: relative;
    max-width: 1200px;
-   margin: 0 5% 0 5%;
+   margin: 0 3% 0 3%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -29,6 +29,6 @@
 .intro {
    background-color: white;
    margin-bottom: 3%;
-   padding-left: 2%;
+   padding: 0.5% 1.5%;
    display: flex;
 }

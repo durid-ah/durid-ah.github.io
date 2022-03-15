@@ -35,7 +35,7 @@
 
 /* The actual content */
 .content {
-   padding: 20px 30px;
+   padding: 5%;
    background-color: white;
    position: relative;
    border-radius: 0 2px 2px 2px;
@@ -45,11 +45,13 @@
    color: var(--headers);
    display: inline-flex;
    align-items: baseline;
+   flex-wrap: wrap;
 }
 
 .content ul {
    font-size: 1.25rem;
    list-style: none;
+   padding-left: 5%;
 }
 
 .content ul li::before {

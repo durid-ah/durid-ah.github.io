@@ -9,6 +9,8 @@
 }
 
 .imageOverlay {
+   display: flex;
+   align-items: center;
    position: absolute;
    top: 0;
    background: radial-gradient(at 100% -25%,#b9b5dd99 20%, hsl(248, 32%, 40%));
