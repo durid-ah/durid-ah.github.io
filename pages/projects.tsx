@@ -7,6 +7,7 @@ import { NavLocation } from "../models/nav_location";
 import Project from '../models/project';
 
 import styles from "../styles/Projects.module.css";
+import CenterContent from '../component/shared_components/center_content/center_content';
 
 export async function getStaticProps() {
    const projectList = await getProjectMetadata();
@@ -40,22 +41,22 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
             </Head>
 
             <main className={styles.main}>
-               <div className={styles.centerContent}>
+               <CenterContent>
                   <TitleSection title="My Project" />
-                  <div className={styles.mainProject}>
+                  <section className={styles.mainProject}>
                      <h2>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
-                  </div>
+                  </section>
 
-                  <div className={styles.projectList}>
+                  <section className={styles.projectList}>
                      <h2>Other Projects:</h2>
                      {
                         projectList.map(item => (
                            <ProjectCard key={item.title} project={item}/>
                         ))
                      }
-                  </div>
-               </div>
+                  </section>
+               </CenterContent>
             </main>
          </Layout>
       </>

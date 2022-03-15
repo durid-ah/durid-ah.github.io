@@ -1,5 +1,6 @@
 import Head from "next/head";
 import JobCard from "../component/resume_components/job_card/job_card";
+import CenterContent from "../component/shared_components/center_content/center_content";
 import Layout from "../component/shared_components/layout/layout";
 import TitleSection from "../component/shared_components/title_section/title_section";
 import { getJobList } from "../lib/job_parser";
@@ -29,15 +30,20 @@ export default function Resume({jobList}: ResumeProps) {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <main className={styles.main}>
-            <section className={styles.title}>
-               <TitleSection title="My Work History" />
-            </section>
-            <section className={styles.timelineSection}>
-               <div className={styles.timeline}>
-                  {jobList.map((job, idx) => 
-                     ( <JobCard key={idx} {...job} /> ))}
-               </div>
-            </section>
+            <CenterContent>
+               <section className={styles.title}>
+                  <TitleSection title="My Work History" />
+               </section>
+               <section className={styles.intro}>
+                  Placeholder ...
+               </section>
+               <section className={styles.timelineSection}>
+                  <div className={styles.timeline}>
+                     {jobList.map((job, idx) => 
+                        ( <JobCard key={idx} {...job} /> ))}
+                  </div>
+               </section>
+            </CenterContent>
          </main>
       </Layout>
    )
