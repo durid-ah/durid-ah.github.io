@@ -1,0 +1,25 @@
+.imageContainer {
+   height: 25vh;
+   overflow: hidden;
+   position: relative;
+}
+
+.headerImage {
+   width: 100%;
+}
+
+.imageOverlay {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   background: radial-gradient(at 100% -25%,#b9b5dd99 20%, hsl(248, 32%, 40%));
+   height: 100%;
+   width: 100%;
+   padding: 3rem 3%;
+}
+
+.pageTitle h1 {
+   font-size: 3rem;
+   color: var(--main-dark);
+}

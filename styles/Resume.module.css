@@ -1,0 +1,34 @@
+.main {
+   background-color: var(--main-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.timelineSection {
+   background-color: var(--center-background);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+   position: relative;
+   max-width: 1200px;
+   margin: 0 3% 0 3%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+   content: '';
+   position: absolute;
+   width: 4px;
+   background-color: white;
+   top: 0;
+   bottom: 0;
+}
+
+.intro {
+   background-color: white;
+   margin-bottom: 3%;
+   padding: 1% 2%;
+   display: flex;
+}
