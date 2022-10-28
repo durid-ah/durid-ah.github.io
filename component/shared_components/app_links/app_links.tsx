@@ -11,19 +11,17 @@ function Links({location}: LinkProps) {
    const projectClickedStyle = isPageClicked(location, NavLocation.Projects);
    const resumeClickedStyle = isPageClicked(location, NavLocation.Resume);
 
-   return (
-      <>
-         <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
-               <Link href="/" passHref><button className={styles.innerButton}>Home</button></Link>
-         </div>
-         <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
-            <Link href={PROJECT_URL} passHref><button className={styles.innerButton}>Projects</button></Link>
-         </div>
-         <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
-            <Link href={RESUME_URL} passHref><button className={styles.innerButton}>Résumé</button></Link>
-         </div>
-      </>
-   )
+   return <>
+      <div className={`${styles.navButton} ${homeClickedStyle} ${styles.link}`}>
+            <Link href="/" passHref legacyBehavior><button className={styles.innerButton}>Home</button></Link>
+      </div>
+      <div className={`${styles.navButton} ${projectClickedStyle} ${styles.link}`}>
+         <Link href={PROJECT_URL} passHref legacyBehavior><button className={styles.innerButton}>Projects</button></Link>
+      </div>
+      <div className={`${styles.navButton} ${resumeClickedStyle} ${styles.link}`}>
+         <Link href={RESUME_URL} passHref legacyBehavior><button className={styles.innerButton}>Résumé</button></Link>
+      </div>
+   </>;
 }
 
 export function AppNav({location}: LinkProps ) {
