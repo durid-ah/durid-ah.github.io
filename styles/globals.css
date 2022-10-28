@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --main-color: #fae4e5;
   --main-dark: #1b1c31;
