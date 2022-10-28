@@ -45,7 +45,7 @@ export default function Home() {
                     </p>
                     <div className={styles.buttonContainer}>
                       <button className={styles.btnSecondary}>Contact Me</button>
-                      <Link href={PROJECT_URL} passHref>
+                      <Link href={PROJECT_URL} passHref legacyBehavior>
                         <button className={styles.btnPrimary}>
                           <div>Projects</div>
                           <div className={styles.chevronIcon}>
@@ -96,5 +96,5 @@ export default function Home() {
         </div>
       </main>
     </Layout>
-  )
+  );
 }
