@@ -17,7 +17,7 @@ import { default as ReactSvg } from "../images/react.svg";
 
 export default function Home() {
   return (
-    <Layout location={NavLocation.Home}>
+    <Layout>
       <Head>
         <title>Durid&apos;s Portfolio - Home Page</title>
           <meta property="og:title" content="Durid's Portfolio" />
@@ -31,27 +31,27 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.mainContent}>
           <section>
-            <div className={styles.introWrapper}>
+            <div className={`${styles.introWrapper} w-full flex`}>
               <div className={styles.intro}>
                 <div className={styles.content}>
-                  <div className={styles.paragraph}>
-                    <h1>Hi, my name&apos;s DURID AHMAD!</h1>
-                    <p>
-                      I am a <span className={styles.focus}>Software Engineer</span> with
+                  <div className={`${styles.paragraph} flex flex-col gap-8`}>
+                    <h1 className='text-primary-focus text-2xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
+                    <p className='text-xl'>
+                      I am a <span className='font-bold'>Software Engineer</span> with
                       experience working with clients of different backgrounds and translating
                       their needs into working solutions.
                       For 2+ years, I have built full-stack applications and integration tools that synchronize
                       data with third-party systems. Feel free to check out my projects or reach out to me.
                     </p>
-                    <div className={styles.buttonContainer}>
-                      <button className={styles.btnSecondary}>Contact Me</button>
-                      <Link href={PROJECT_URL} passHref legacyBehavior>
-                        <button className={styles.btnPrimary}>
-                          <div>Projects</div>
-                          <div className={styles.chevronIcon}>
+                    <div className='flex overflow-visible justify-evenly gap-2'>
+                      <button className='btn btn-md btn-outline'>Contact Me</button>
+                      <Link href={PROJECT_URL} passHref className='btn btn-md'>
+                        {/* <button > */}
+                          Projects
+                          {/* <div className={styles.chevronIcon}> */}
                             <ChevronSvg/>
-                          </div>
-                        </button>
+                          {/* </div> */}
+                        {/* </button> */}
                       </Link>
                     </div>
                   </div>

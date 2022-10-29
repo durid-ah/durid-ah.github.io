@@ -1,36 +1,42 @@
-import React, {useState} from "react";
+import React from "react";
 
-import { NavLocation } from "../../../models/nav_location";
+import { PROJECT_URL, RESUME_URL } from "../../../models/nav_location";
 import styles from "./layout.module.css";
-import { AppNav, AppMenu } from "../app_links/app_links";
 
 import {default as MenuSvg} from '../../../images/menu-m.svg';
+import Link from "next/link";
 
 type LayoutProps = {
    children?: React.ReactNode,
-   location: NavLocation
 }
 
-export default function Layout({children, location} : LayoutProps) {
-   const [show, setShow] = useState(false);
-
+export default function Layout({ children } : LayoutProps) {
    return (
       <>
-         <nav className={styles.navbar}>
-            <div className={styles.portfolioTitle}>Durid's Portfolio</div>
-            <AppNav location={location}/>
-            <div
-               className={styles.menuIcon}
-               onClick={() => setShow(!show)}>
-                  <MenuSvg />
+         <nav className="navbar bg-neutral text-neutral-content">
+            <div className={`${styles.portfolioTitle} navbar-start normal-case text-3xl`}>
+               Durid's Portfolio
+            </div>
+            <div className="navbar-end hidden lg:flex text-3xl">
+               <ul className="menu menu-horizontal p-0">
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href={PROJECT_URL}>Projects</Link></li>
+                  <li><Link href={RESUME_URL}>Résumé</Link></li>
+               </ul>
+            </div>
+            <div className="navbar-end lg:hidden">
+               <div className="dropdown dropdown-end">
+                  <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                     <MenuSvg />
+                  </label>
+                  <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                     <li><Link href="/">Home</Link></li>
+                     <li><Link href={PROJECT_URL}>Projects</Link></li>
+                     <li><Link href={RESUME_URL}>Résumé</Link></li>
+                  </ul>
+               </div>
             </div>
          </nav>
-         {
-            show &&
-            <div className={styles.mobileNav}>
-               <AppMenu location={location} />
-            </div>
-         }
          {children}
 
          <footer className={styles.footer}>
