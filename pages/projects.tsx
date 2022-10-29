@@ -39,11 +39,11 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <main className="flex flex-col items-center bg-base-300">
                <CenterContent>
                   <TitleSection title="My Projects" />
-                  <section className={styles.mainProject}>
-                     <h2>This Website:</h2>
+                  <section className="p-2">
+                     <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
                   </section>
 

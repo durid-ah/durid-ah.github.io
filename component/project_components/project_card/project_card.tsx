@@ -11,14 +11,14 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
    return (
-      <div className={styles.currentProject}>
-         <h3>{project.title}</h3>
-         <p className={styles.projectDescription}>
+      <div className="p-4 card flex flex-col bg-base-100 gap-2">
+         <h3 className="bg-base-100 text-2xl w-full text-base-content font-medium">{project.title}</h3>
+         <p className="text-xl">
             {project.description}
          </p>
          <p className={styles.projectDescription}>
-            <span>Technologies Used:</span>
-            <span className={styles.chips}>
+            <span className="text-base-content">Technologies Used:</span>
+            <span className={`inline-flex flex-wrap gap-2 ml-2`}>
                {
                   project.technologies.map(
                      text => (<TechChip key={text} text={text} />))
