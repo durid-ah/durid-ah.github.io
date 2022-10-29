@@ -9,14 +9,6 @@
    justify-content: flex-end;
 }
 
-.whiteBackground {
-   background-color: white;
-}
-
-.purpleBackground {
-   background-color: #e5e3f399;
-}
-
 .card:hover {
    text-decoration: underline;
 }

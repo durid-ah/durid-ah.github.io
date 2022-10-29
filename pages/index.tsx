@@ -36,7 +36,7 @@ export default function Home() {
                 <div className="hero h-full w-4/6 mt-16 mb-20">
                   <div className="sm:items-start items-center w-full hero-content flex flex-col gap-8">
                     <h1 className='w-full text-primary-focus text-3xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
-                    <p className='text-xl'>
+                    <p className='text-xl text-primary-content'>
                       I am a <span className='font-bold'>Software Engineer</span> with
                       experience working with clients of different backgrounds and translating
                       their needs into working solutions.
@@ -55,9 +55,9 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="skills" className="p-4 bg-base-100 flex flex-col items-center">
+          <section id="skills" className="p-6 bg-base-100 flex flex-col items-center">
             <h1 className="text-3xl font-bold text-primary-focus">My Skills</h1>
-            <div className={styles.cardRow}>
+            <div className="flex justify-center flex-wrap w-full gap-14 my-12">
               <ContactCard
                 href="" SvgIcon={CSharpSvg} label="C#/.NET" background='purple'/>
               <ContactCard
@@ -66,12 +66,13 @@ export default function Home() {
                 href="" SvgIcon={ReactSvg} label="React.js" background='purple'/>
             </div>
           </section>
-          <div className={styles.contactMe}>
-            <h1>Contact Me</h1>
-            <div className={styles.description}>
+          
+          <section id="contact-me" className="p-6 flex flex-col items-center gap-4">
+            <h1 className='text-3xl font-bold text-primary-focus'>Contact Me</h1>
+            <div className="text-xl text-primary-content">
               Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github
             </div>
-            <div className={styles.cardRow}>
+            <div className="flex justify-center flex-wrap w-full gap-14 my-12">
               <ContactCard
                 href="https://www.linkedin.com/in/durid-ahmad/"
                 SvgIcon={LinkedInSvg}
@@ -88,7 +89,7 @@ export default function Home() {
                 label="View My Code"
                 background='white' />
             </div>
-          </div>
+          </section>
         </div>
       </main>
     </Layout>

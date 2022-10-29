@@ -17,7 +17,7 @@ export default function Layout({ children } : LayoutProps) {
             <div className={`${styles.portfolioTitle} navbar-start normal-case text-3xl`}>
                Durid's Portfolio
             </div>
-            <div className="navbar-end hidden lg:flex text-3xl">
+            <div className="navbar-end hidden lg:flex text-2xl">
                <ul className="menu menu-horizontal p-0">
                   <li><Link href="/">Home</Link></li>
                   <li><Link href={PROJECT_URL}>Projects</Link></li>
