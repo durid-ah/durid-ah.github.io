@@ -34,8 +34,8 @@ export default function Home() {
           <section id="intro" className={`${styles.intro} bg-base-100 flex md:mb-28 mb-56`}>
                 <div className="hero h-full w-4/6 mt-16 mb-20">
                   <div className="sm:items-start items-center w-full hero-content flex flex-col gap-8">
-                    <h1 className='w-full text-primary-focus text-3xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
-                    <p className='text-xl text-primary-content'>
+                    <h1 className='w-full text-primary-content text-3xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
+                    <p className='text-xl text-secondary-content'>
                       I am a <span className='font-bold'>Software Engineer</span> with
                       experience working with clients of different backgrounds and translating
                       their needs into working solutions.
@@ -43,7 +43,7 @@ export default function Home() {
                       data with third-party systems. Feel free to check out my projects or reach out to me.
                     </p>
                     <div className='flex overflow-visible justify-evenly gap-2 w-full'>
-                      <button className='btn btn-md btn-outline'>Contact Me</button>
+                      <Link href="#contact-me" className='btn btn-md btn-secondary'>Contact Me</Link>
                       <Link href={PROJECT_URL} passHref className='btn btn-md'>
                           Projects <ChevronSvg/>
                       </Link>
@@ -53,7 +53,7 @@ export default function Home() {
           </section>
 
           <section id="skills" className="p-6 bg-base-100 flex flex-col items-center">
-            <h1 className="text-3xl font-bold text-primary-focus">My Skills</h1>
+            <h1 className="text-3xl font-bold text-primary-content">My Skills</h1>
             <div className="flex justify-center flex-wrap w-full gap-14 my-12">
               <ContactCard
                 href="" SvgIcon={CSharpSvg} label="C#/.NET" background='purple'/>
@@ -65,8 +65,8 @@ export default function Home() {
           </section>
           
           <section id="contact-me" className="p-6 flex flex-col items-center gap-4">
-            <h1 className='text-3xl font-bold text-primary-focus'>Contact Me</h1>
-            <div className="text-xl text-primary-content">
+            <h1 className='text-3xl font-bold text-primary-content'>Contact Me</h1>
+            <div className="text-xl text-secondary-content">
               Feel free to reach out to me through LinkedIn or email (preferably LinkedIn), or you can checkout my code on Github
             </div>
             <div className="flex justify-center flex-wrap w-full gap-14 my-12">
