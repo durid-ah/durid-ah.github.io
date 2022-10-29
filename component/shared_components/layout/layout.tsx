@@ -39,8 +39,8 @@ export default function Layout({ children } : LayoutProps) {
          </nav>
          {children}
 
-         <footer className={styles.footer}>
-            <div>Logos were provided by <a target="_blank" rel="noreferrer" href="https://iconmonstr.com">iconmonstr</a></div>
+         <footer className="footer footer-center p-4 bg-neutral text-neutral-content">
+            <div><p className="p-2">Logos were provided by <a className="underline" target="_blank" rel="noreferrer" href="https://iconmonstr.com">iconmonstr</a></p></div>
          </footer>
       </>
    );
