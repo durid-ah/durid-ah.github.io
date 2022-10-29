@@ -1,19 +1,8 @@
 .main {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - var(--footer-height));
-}
-
-.mainContent {
-  width: 66%;
-  background-color: var(--center-background);
-  box-shadow: var(--card-shadow);
-}
-
-.introWrapper {
-  margin-bottom: 7%;
 }
 
 .intro {
@@ -92,19 +81,11 @@
 
 /* Handle tablet AND mobile */
 @media screen and (max-width: 820px) {
-  .introWrapper {
-    margin-bottom: 25%;
-  }
-
   /*hide the right slant and leave the bottom one*/
   .intro {
     flex-grow: 1;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
-
-  .mainContent {
-    width: 100%;
   }
 
   .content {

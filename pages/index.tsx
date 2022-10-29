@@ -28,14 +28,13 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles.mainContent}>
-          <section>
-            <div className={`${styles.introWrapper} w-full flex`}>
-              <div className={styles.intro}>
-                <div className={styles.content}>
-                  <div className={`${styles.paragraph} flex flex-col gap-8`}>
-                    <h1 className='text-primary-focus text-2xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
+      <main className={`${styles.main} bg-base-200`}>
+        <div className="shadow-sm bg-base-100">
+          <section id="intro" className="md:mb-28 mb-56">
+              <div className={styles.intro}> {/** polygon */}
+                <div className="hero h-full w-4/6 mt-16 mb-20">
+                  <div className={`${styles.paragraph} md:w-1/3 w-full hero-content flex flex-col gap-8`}>
+                    <h1 className='w-full text-primary-focus text-2xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
                     <p className='text-xl'>
                       I am a <span className='font-bold'>Software Engineer</span> with
                       experience working with clients of different backgrounds and translating
@@ -43,21 +42,16 @@ export default function Home() {
                       For 2+ years, I have built full-stack applications and integration tools that synchronize
                       data with third-party systems. Feel free to check out my projects or reach out to me.
                     </p>
-                    <div className='flex overflow-visible justify-evenly gap-2'>
+                    <div className='flex overflow-visible justify-evenly gap-2 w-full'>
                       <button className='btn btn-md btn-outline'>Contact Me</button>
                       <Link href={PROJECT_URL} passHref className='btn btn-md'>
-                        {/* <button > */}
                           Projects
-                          {/* <div className={styles.chevronIcon}> */}
-                            <ChevronSvg/>
-                          {/* </div> */}
-                        {/* </button> */}
+                          <ChevronSvg/>
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
           </section>
           <section className={styles.skills}>
             <h1>My Skills</h1>
