@@ -31,8 +31,7 @@ export default function Home() {
       <main className="bg-base-300 overflow-x-hidden flex justify-center">
         <div className="shadow-sm bg-base-200 md:w-2/3 w-full">
 
-          <section id="intro" className="md:mb-28 mb-56">
-              <div className={`${styles.intro} bg-base-100 flex`}> {/** polygon */}
+          <section id="intro" className={`${styles.intro} bg-base-100 flex md:mb-28 mb-56`}>
                 <div className="hero h-full w-4/6 mt-16 mb-20">
                   <div className="sm:items-start items-center w-full hero-content flex flex-col gap-8">
                     <h1 className='w-full text-primary-focus text-3xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
@@ -46,13 +45,11 @@ export default function Home() {
                     <div className='flex overflow-visible justify-evenly gap-2 w-full'>
                       <button className='btn btn-md btn-outline'>Contact Me</button>
                       <Link href={PROJECT_URL} passHref className='btn btn-md'>
-                          Projects
-                          <ChevronSvg/>
+                          Projects <ChevronSvg/>
                       </Link>
                     </div>
                   </div>
                 </div>
-              </div>
           </section>
 
           <section id="skills" className="p-6 bg-base-100 flex flex-col items-center">

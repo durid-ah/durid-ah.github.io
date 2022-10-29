@@ -1,7 +1,5 @@
 .intro {
-  height: 100%;
   display: flex;
-  width: 100%;
   padding-left: 10%;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 82% 92%, 0 100%);
