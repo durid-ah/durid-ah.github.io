@@ -41,7 +41,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
 
             <main className={styles.main}>
                <CenterContent>
-                  <TitleSection title="My Project" />
+                  <TitleSection title="My Projects" />
                   <section className={styles.mainProject}>
                      <h2>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
