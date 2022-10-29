@@ -1,5 +1,4 @@
 import React, { SVGProps } from "react";
-import styles from "./contact_card.module.css";
 
 type ContactCardProps = {
    href: string,
