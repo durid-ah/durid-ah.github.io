@@ -1,4 +1,3 @@
-import styles from "./tech_chip.module.css"
 
 type ChipProps = {
    text: string
@@ -6,6 +5,6 @@ type ChipProps = {
 
 export default function TechChip({text}: ChipProps) {
    return (
-      <span className={styles.chipSpan}>#{text}</span>
+      <span className="p-2 badge badge-outline">#{text}</span>
    )
 }
