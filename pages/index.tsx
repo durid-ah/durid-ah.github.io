@@ -28,13 +28,14 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`${styles.main} bg-base-200`}>
-        <div className="shadow-sm bg-base-100">
+      <main className="bg-base-300 overflow-x-hidden flex justify-center">
+        <div className="shadow-sm bg-base-200 md:w-2/3 w-full">
+
           <section id="intro" className="md:mb-28 mb-56">
-              <div className={styles.intro}> {/** polygon */}
+              <div className={`${styles.intro} bg-base-100 flex`}> {/** polygon */}
                 <div className="hero h-full w-4/6 mt-16 mb-20">
-                  <div className={`${styles.paragraph} md:w-1/3 w-full hero-content flex flex-col gap-8`}>
-                    <h1 className='w-full text-primary-focus text-2xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
+                  <div className="sm:items-start items-center w-full hero-content flex flex-col gap-8">
+                    <h1 className='w-full text-primary-focus text-3xl font-medium'>Hi, my name&apos;s DURID AHMAD!</h1>
                     <p className='text-xl'>
                       I am a <span className='font-bold'>Software Engineer</span> with
                       experience working with clients of different backgrounds and translating
@@ -53,8 +54,9 @@ export default function Home() {
                 </div>
               </div>
           </section>
-          <section className={styles.skills}>
-            <h1>My Skills</h1>
+
+          <section id="skills" className="p-4 bg-base-100 flex flex-col items-center">
+            <h1 className="text-3xl font-bold text-primary-focus">My Skills</h1>
             <div className={styles.cardRow}>
               <ContactCard
                 href="" SvgIcon={CSharpSvg} label="C#/.NET" background='purple'/>

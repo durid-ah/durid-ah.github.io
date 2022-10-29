@@ -1,52 +1,10 @@
-.main {
-  /* background-color: var(--main-color); */
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-}
-
 .intro {
   height: 100%;
   display: flex;
   width: 100%;
-  background-color: white;
   padding-left: 10%;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 82% 92%, 0 100%);
-  box-shadow: var(--card-shadow);
-}
-
-/* Div containing the intro text*/
-.content {
-  position: relative;
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  padding: 5% 1% 7%;
-}
-
-.paragraph {
-  width: 100%;
-}
-
-.content p {
-  word-break: break-word;
-}
-
-.skills {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.skills h1 {
-  text-align: center;
-  font-size: 2rem;
 }
 
 .contactMe {
@@ -86,22 +44,5 @@
     flex-grow: 1;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
-
-  .content {
-    width: 100%;
-    margin-bottom: 8%;
-  }
-
-  .paragraph {
-    width: 100%;
-    /* top | horizontal | bottom */
-    padding: 3% 3% 7%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .paragraph {
-    align-items: center;
   }
 }
