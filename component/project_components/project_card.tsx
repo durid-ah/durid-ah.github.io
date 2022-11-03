@@ -1,5 +1,5 @@
-import Project from "../../../models/project";
-import TechChip from "../tech_chip/tech_chip";
+import Project from "../../models/project";
+import TechChip from "./tech_chip";
 
 import { default as GitHubSvg } from "../../../images/iconmonstr-github-2.svg";
 import React from "react";
