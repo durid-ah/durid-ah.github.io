@@ -28,15 +28,16 @@ export default function Resume({jobList}: ResumeProps) {
             <meta property="og:image" content={"./images/iconmonstr-code-6.svg"} />
             <link rel="icon" href="/favicon.ico" />
          </Head>
-         <main className={styles.main}>
+         <main className="flex flex-col items-center bg-base-300">
             <CenterContent>
-               <section className={styles.title}>
-                  <TitleSection title="My Work History" />
+               <TitleSection title="My Work History" />
+
+               <section className="bg-base-100 p-4 mb-2">
+                  <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>
+                     My work history starting from the most recent to the oldest.
+                  </h2>
                </section>
-               <section className={styles.intro}>
-                  <h2>My work history is listed starting from the most recent to the oldest.</h2>
-               </section>
-               <section className={styles.timelineSection}>
+               <section id="timeline-section">
                   <div className={styles.timeline}>
                      {jobList.map((job, idx) => 
                         ( <JobCard key={idx} {...job} /> ))}

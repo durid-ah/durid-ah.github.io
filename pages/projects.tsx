@@ -5,7 +5,6 @@ import TitleSection from '../component/shared_components/title_section/title_sec
 import { getPortfolioData, getProjectMetadata } from '../lib/project_parser';
 import Project from '../models/project';
 
-import styles from "../styles/Projects.module.css";
 import CenterContent from '../component/shared_components/center_content';
 
 export async function getStaticProps() {
