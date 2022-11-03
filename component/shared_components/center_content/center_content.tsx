@@ -1,4 +1,3 @@
-import styles from './center_content.module.css';
 
 export default function CenterContent({children}) {
    return (
