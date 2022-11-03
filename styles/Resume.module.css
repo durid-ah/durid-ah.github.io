@@ -12,13 +12,13 @@
    content: '';
    position: absolute;
    width: 4px;
-   background-color: white;
+   background-color: hsl(var(--b1) / var(--tw-bg-opacity));;
    top: 0;
    bottom: 0;
 }
 
 .intro {
-   background-color: white;
+   background-color: hsl(var(--b1) / var(--tw-bg-opacity));;
    margin-bottom: 3%;
    padding: 1% 2%;
    display: flex;
