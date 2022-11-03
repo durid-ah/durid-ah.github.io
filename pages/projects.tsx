@@ -6,7 +6,7 @@ import { getPortfolioData, getProjectMetadata } from '../lib/project_parser';
 import Project from '../models/project';
 
 import styles from "../styles/Projects.module.css";
-import CenterContent from '../component/shared_components/center_content/center_content';
+import CenterContent from '../component/shared_components/center_content';
 
 export async function getStaticProps() {
    const projectList = await getProjectMetadata();

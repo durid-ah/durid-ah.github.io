@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from '../styles/Home.module.css';
 import Layout from "../component/shared_components/layout/layout";
-import ContactCard from '../component/shared_components/contact_card/contact_card';
+import ContactCard from '../component/shared_components/contact_card';
 import { PROJECT_URL } from '../models/nav_location';
 
 import { default as ChevronSvg } from "../images/chevron-right-m.svg";

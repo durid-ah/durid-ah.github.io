@@ -1,6 +1,6 @@
 import Head from "next/head";
 import JobCard from "../component/resume_components/job_card/job_card";
-import CenterContent from "../component/shared_components/center_content/center_content";
+import CenterContent from "../component/shared_components/center_content";
 import Layout from "../component/shared_components/layout/layout";
 import TitleSection from "../component/shared_components/title_section/title_section";
 import { getJobList } from "../lib/job_parser";
