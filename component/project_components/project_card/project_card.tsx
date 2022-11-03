@@ -1,7 +1,6 @@
 import Project from "../../../models/project";
 import TechChip from "../tech_chip/tech_chip";
 
-import styles from "./project_card.module.css";
 import { default as GitHubSvg } from "../../../images/iconmonstr-github-2.svg";
 import React from "react";
 
@@ -11,30 +10,28 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
    return (
-      <div className="p-4 card flex flex-col bg-base-100 gap-2">
-         <h3 className="bg-base-100 text-2xl w-full text-base-content font-medium">{project.title}</h3>
+      <div className="p-4 card flex flex-col bg-base-100 gap-8">
+         <h3 className="bg-base-100 text-2xl w-full text-secondary-content font-medium">{project.title}</h3>
          <p className="text-xl">
             {project.description}
          </p>
-         <p className={styles.projectDescription}>
-            <span className="text-base-content">Technologies Used:</span>
-            <span className={`inline-flex flex-wrap gap-2 ml-2`}>
+         <p className="text-xl">
+            <span className="text-secondary-content font-bold">Technologies Used:</span>
+            <span className="inline-flex flex-wrap gap-2 ml-2 font-medium">
                {
                   project.technologies.map(
                      text => (<TechChip key={text} text={text} />))
                }
             </span>
          </p>
-         <div className={styles.projectLinks}>
+         <div className="flex justify-end">
             {
                project.github && 
-               <a href={project.github} target="_blank" className={styles.link}>
-                  <div className={styles.linkImage}>
+               <a href={project.github} target="_blank" className="badge badge-secondary gap-2 p-4">
+                  <div className="rounded-full overflow-hidden">
                      <GitHubSvg height={24} width={24}/>
                   </div>
-                  <div className={styles.label}>
-                     GitHub Repo
-                  </div>
+                  GitHub Repo
                </a>
             }
          </div>
