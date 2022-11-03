@@ -3,7 +3,7 @@ import React from "react";
 import { PROJECT_URL, RESUME_URL } from "../../../models/nav_location";
 import styles from "./layout.module.css";
 
-import {default as MenuSvg} from '../../../images/menu-m.svg';
+import {default as MenuSvg} from '/images/menu-m.svg';
 import Link from "next/link";
 
 type LayoutProps = {
