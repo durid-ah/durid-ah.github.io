@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import Layout from "../component/shared_components/layout/layout";
-import ProjectCard from '../component/project_components/project_card/project_card';
+import ProjectCard from '../component/project_components/project_card';
 import TitleSection from '../component/shared_components/title_section/title_section';
 import { getPortfolioData, getProjectMetadata } from '../lib/project_parser';
-import { NavLocation } from "../models/nav_location";
 import Project from '../models/project';
 
-import styles from "../styles/Projects.module.css";
-import CenterContent from '../component/shared_components/center_content/center_content';
+import CenterContent from '../component/shared_components/center_content';
 
 export async function getStaticProps() {
    const projectList = await getProjectMetadata();
@@ -29,7 +27,7 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
 
    return (
       <>
-         <Layout location={NavLocation.Projects}>
+         <Layout>
             <Head>
                <title>Durid&apos;s Portfolio - Resume</title>
                <meta property="og:title" content="Durid's Portfolio" />
@@ -40,16 +38,16 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
+            <main className="flex flex-col items-center bg-base-300">
                <CenterContent>
-                  <TitleSection title="My Project" />
-                  <section className={styles.mainProject}>
-                     <h2>This Website:</h2>
+                  <TitleSection title="My Projects" />
+                  <section className="p-2 flex flex-col gap-4">
+                     <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
                   </section>
 
-                  <section className={styles.projectList}>
-                     <h2>Other Projects:</h2>
+                  <section className="p-2 flex flex-col gap-4">
+                     <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
                      {
                         projectList.map(item => (
                            <ProjectCard key={item.title} project={item}/>

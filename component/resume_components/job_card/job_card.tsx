@@ -11,10 +11,13 @@ export default function JobCard({position, company, location, descriptions, star
    return (
       <div className={styles.container}>
          <div className={styles.content}>
-            <h2> <span>{position}</span> <span className={styles.time}>{timeDiff.toString()}</span></h2>
-            <h3>{company} ({location})</h3>
+            <h2 className="text-xl inline-flex items-baseline flex-wrap"> 
+               <span className="text-primary-content font-medium">{position}</span> 
+               <span className={styles.time}>{timeDiff.toString()}</span>
+            </h2>
+            <h3 className="text-lg text-secondary-content">{company} ({location})</h3>
             <ul>
-               {descriptions.map(desc => (<li key={desc}>{desc}</li>))}
+               {descriptions.map(desc => (<li className="text-base" key={desc}>{desc}</li>))}
             </ul>
          </div>
       </div>

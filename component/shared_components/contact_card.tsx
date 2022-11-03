@@ -1,5 +1,4 @@
 import React, { SVGProps } from "react";
-import styles from "./contact_card.module.css";
 
 type ContactCardProps = {
    href: string,
@@ -10,13 +9,15 @@ type ContactCardProps = {
 
 export default function ContactCard({href, SvgIcon, label, background}: ContactCardProps) {
    const openLink = () => href != "" ? window.open(href, "_blank", "noreferrer"): "";
-   const backgroundStyle = background == "white"? styles.whiteBackground: styles.purpleBackground;
+   const backgroundStyle = background == "white"? "bg-base-100": "bg-base-200";
    return (
-      <div className={`${styles.card} ${backgroundStyle}`} onClick={openLink}>
-         <div className={styles.cardIcon}>
-               <SvgIcon/>
+      <div className={`card w-56 shadow-lg ${backgroundStyle}`} onClick={openLink}>
+         <div className="card-body items-center">
+            <h2 className="card-title text-center text-secondary-content">{label}</h2>
          </div>
-        <h3>{label}</h3>
+         <figure className="px-10 pb-10">
+               <SvgIcon/>
+         </figure>
       </div>
    )
 }
