@@ -42,12 +42,12 @@ export default function Projects({projectList, portfolioDescription}: ProjectPro
                <CenterContent>
                   <TitleSection title="My Projects" />
                   <section className="p-2 flex flex-col gap-4">
-                     <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
+                     <h2 className='card p-4 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
                      <ProjectCard project={portfolioDescription}/>
                   </section>
 
                   <section className="p-2 flex flex-col gap-4">
-                     <h2 className='card py-2 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>This Website:</h2>
+                     <h2 className='card p-4 mb-2 pl-4 bg-base-100 text-3xl w-full text-primary-focus font-medium'>Projects:</h2>
                      {
                         projectList.map(item => (
                            <ProjectCard key={item.title} project={item}/>
